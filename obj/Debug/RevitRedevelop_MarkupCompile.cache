@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 
-21434765294
+9131514747
 4-1343515361
-6-1077538094
-161210314228
-UI\Login.xaml;UI\UserInfo.xaml;
+15993698842
+70-709347610
+UI\BaseInfoManage\PaveModelManage.xaml;UI\DrawFloorPlan\DrawFloorPlan.xaml;UI\LoginANDRegister\Login.xaml;UI\LoginANDRegister\Register.xaml;UI\UserInfoManage\PackagePurchase .xaml;UI\Pave\Pave.xaml;UI\ResultExport\ResultExport.xaml;UI\BaseInfoManage\TileProductManage.xaml;UI\UserInfoManage\UserInfo.xaml;
 
 False
 

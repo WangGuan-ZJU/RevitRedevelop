@@ -1,4 +1,11 @@
-﻿using System;
+﻿/***
+ * 
+ * 
+ * 控制Revit内置面板的UI
+ * 
+ * */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,6 +33,7 @@ namespace RevitRedevelop
             ElementSet elements)
         {
             uiApp = commandData.Application;
+            UIApp.myApp = uiApp;
             Autodesk.Revit.ApplicationServices.Application app = uiApp.Application;
             m_Doc = uiApp.ActiveUIDocument.Document;
 
@@ -46,10 +54,6 @@ namespace RevitRedevelop
             
             return Result.Succeeded;
         }
-        public UIApplication getUIApp()
-        {
-            return uiApp;
-        }
     }
     public class Ribbon : IExternalApplication
     {
@@ -61,14 +65,12 @@ namespace RevitRedevelop
         RibbonPanel rp2;
         RibbonPanel rp3;
         RibbonPanel rp4;
-        UIControlledApplication myApp;
         public Autodesk.Revit.UI.Result OnStartup(UIControlledApplication application)
         {
             try
             {
                 CreateRibbonSamplePanel(application);
                 RegisterDockableSamplePane(application);
-                myApp = application;
                 return Autodesk.Revit.UI.Result.Succeeded;
             }
             catch (Exception ex)
@@ -172,9 +174,6 @@ namespace RevitRedevelop
         public void RegisterDockableSamplePane(UIControlledApplication application)
         {
            // SetCarportNum.AvailabilityClassName = "RevitRedevelop.AvailabilityControll";
-
-            // Guid temp = System.Guid.NewGuid.ToString('D');
-
             string temp = "ef5b0ecc-5859-4642-bb27-769393383d99";
             UI.UserInfo m_mainPage = new UI.UserInfo();
 
@@ -188,10 +187,6 @@ namespace RevitRedevelop
         {
             return new BitmapImage(new Uri(
              imageName));
-        }
-        public UIControlledApplication getUICTApp()
-        {
-            return myApp;
         }
     }
 }

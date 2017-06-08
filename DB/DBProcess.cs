@@ -24,10 +24,6 @@ namespace RevitRedevelop.DB
         {
             return true;
         }
-        public bool insert()
-        {
-            return true;
-        }
         public BsonDocument search()
         {
             return null;

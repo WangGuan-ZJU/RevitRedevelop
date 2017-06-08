@@ -68,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AvailabilityControll.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="UIApp.cs" />
     <Compile Include="DB\DBDao.cs" />
     <Compile Include="DB\DBProcess.cs" />
     <Compile Include="UI\BaseInfoManage\PaveModelManage.xaml.cs">

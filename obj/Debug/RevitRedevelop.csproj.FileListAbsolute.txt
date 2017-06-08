@@ -25,11 +25,32 @@ C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\ru-RU\AdWindows.resources.dll
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\zh-CN\AdWindows.resources.dll
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\zh-TW\AdWindows.resources.dll
-C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\Login.baml
-C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\UserInfo.baml
-C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\Login.g.cs
-C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\UserInfo.g.cs
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop_MarkupCompile.cache
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.g.resources
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.dll
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\BaseInfoManage\PaveModelManage.baml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\DrawFloorPlan.baml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\LoginANDRegister\Login.baml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\LoginANDRegister\Register.baml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\UserInfoManage\PackagePurchase .baml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\Pave\Pave.baml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\ResultExport\ResultExport.baml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\BaseInfoManage\TileProductManage.baml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\UserInfoManage\UserInfo.baml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\BaseInfoManage\PaveModelManage.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\DrawFloorPlan.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\LoginANDRegister\Login.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\LoginANDRegister\Register.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\UserInfoManage\PackagePurchase .g.cs
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\Pave\Pave.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\ResultExport\ResultExport.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\BaseInfoManage\TileProductManage.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\UserInfoManage\UserInfo.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\MongoDB.Bson.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\MongoDB.Driver.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\MongoDB.Bson.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\MongoDB.Driver.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\MongoDB.Driver.Core.xml

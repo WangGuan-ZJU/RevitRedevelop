@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Collections.Generic;
 using System.IO;
 using System.Windows;
 using System.Windows.Interop;
@@ -16,8 +15,16 @@ using RApplication = Autodesk.Revit.ApplicationServices.Application;
 
 namespace RevitRedevelop
 {
-    public class Class1
+    public static class UIApp
     {
-       
+        public static Autodesk.Revit.UI.UIApplication myApp;
+        //public UIApp(Autodesk.Revit.UI.UIApplication app)
+        //{
+        //    myApp = app;
+        //}
+        //public Autodesk.Revit.UI.UIApplication get()
+        //{
+        //    return myApp;
+        //}
     }
 }

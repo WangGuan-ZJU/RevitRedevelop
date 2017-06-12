@@ -54,3 +54,36 @@ C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\MongoDB.Bson.xml
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\MongoDB.Driver.xml
 C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\MongoDB.Driver.Core.xml
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\BaseInfoManage\PaveModelManage.baml
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\DrawFloorPlan.baml
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\LoginANDRegister\Login.baml
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\LoginANDRegister\Register.baml
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\Pave\Pave.baml
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\ResultExport\ResultExport.baml
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\BaseInfoManage\TileProductManage.baml
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\UserInfoManage\UserInfo.baml
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\BaseInfoManage\PaveModelManage.g.cs
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\DrawFloorPlan.g.cs
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\LoginANDRegister\Login.g.cs
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\LoginANDRegister\Register.g.cs
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\Pave\Pave.g.cs
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\ResultExport\ResultExport.g.cs
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\BaseInfoManage\TileProductManage.g.cs
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\UserInfoManage\UserInfo.g.cs
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\RevitRedevelop_MarkupCompile.cache
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\RevitRedevelop.g.resources
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\RevitRedevelop.dll
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\RevitRedevelop.pdb
+D:\RevitRedevelop\RevitRedevelop\bin\Debug\RevitRedevelop.dll
+D:\RevitRedevelop\RevitRedevelop\bin\Debug\RevitRedevelop.pdb
+D:\RevitRedevelop\RevitRedevelop\bin\Debug\MongoDB.Bson.dll
+D:\RevitRedevelop\RevitRedevelop\bin\Debug\MongoDB.Driver.Core.dll
+D:\RevitRedevelop\RevitRedevelop\bin\Debug\MongoDB.Driver.dll
+D:\RevitRedevelop\RevitRedevelop\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\RevitRedevelop\RevitRedevelop\bin\Debug\MongoDB.Bson.xml
+D:\RevitRedevelop\RevitRedevelop\bin\Debug\MongoDB.Driver.xml
+D:\RevitRedevelop\RevitRedevelop\bin\Debug\MongoDB.Driver.Core.xml
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\UserInfoManage\PackagePurchase.baml
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\UserInfoManage\PackagePurchase.g.cs
+D:\RevitRedevelop\RevitRedevelop\bin\Debug\RevitAPI.dll
+D:\RevitRedevelop\RevitRedevelop\bin\Debug\RevitAPIUI.dll

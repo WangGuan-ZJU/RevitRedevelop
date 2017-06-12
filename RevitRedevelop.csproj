@@ -44,11 +44,13 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="RevitAPI">
-      <HintPath>D:\Revit 2015\RevitAPI.dll</HintPath>
+    <Reference Include="RevitAPI, Version=2015.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\RevitAPI.dll</HintPath>
     </Reference>
-    <Reference Include="RevitAPIUI">
-      <HintPath>D:\Revit 2015\RevitAPIUI.dll</HintPath>
+    <Reference Include="RevitAPIUI, Version=2015.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\RevitAPIUI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -68,7 +70,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AvailabilityControll.cs" />
-    <Compile Include="UIApp.cs" />
+    <Compile Include="DockblePaneControble.cs" />
+    <Compile Include="UIEntityApp.cs" />
     <Compile Include="DB\DBDao.cs" />
     <Compile Include="DB\DBProcess.cs" />
     <Compile Include="UI\BaseInfoManage\PaveModelManage.xaml.cs">
@@ -85,9 +88,6 @@
     <Compile Include="UI\LoginANDRegister\Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\UserInfoManage\PackagePurchase .xaml.cs">
-      <DependentUpon>PackagePurchase .xaml</DependentUpon>
-    </Compile>
     <Compile Include="UI\Pave\Pave.xaml.cs">
       <DependentUpon>Pave.xaml</DependentUpon>
     </Compile>
@@ -96,6 +96,9 @@
     </Compile>
     <Compile Include="UI\BaseInfoManage\TileProductManage.xaml.cs">
       <DependentUpon>TileProductManage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserInfoManage\PackagePurchase.xaml.cs">
+      <DependentUpon>PackagePurchase.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\UserInfoManage\UserInfo.xaml.cs">
       <DependentUpon>UserInfo.xaml</DependentUpon>
@@ -124,10 +127,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\UserInfoManage\PackagePurchase .xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="UI\Pave\Pave.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -137,6 +136,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\BaseInfoManage\TileProductManage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\UserInfoManage\PackagePurchase.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

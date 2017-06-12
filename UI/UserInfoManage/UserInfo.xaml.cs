@@ -34,12 +34,12 @@ namespace RevitRedevelop.UI
             DockablePaneProviderData d = new DockablePaneProviderData();
 
             data.InitialState = new Autodesk.Revit.UI.DockablePaneState();
-            data.InitialState.SetFloatingRectangle(new Autodesk.Revit.UI.Rectangle(0,100,200,200));
-            data.InitialState.DockPosition = Autodesk.Revit.UI.DockPosition.Floating;
+         //   data.InitialState.SetFloatingRectangle(new Autodesk.Revit.UI.Rectangle(0,100,200,200));
+            data.InitialState.DockPosition = Autodesk.Revit.UI.DockPosition.Tabbed;
         }
         private void Close(object sender, RoutedEventArgs e)
         {
-            string guid = "ef5b0ecc-5859-4642-bb27-769393383d99";
+            string guid = "ef5b0ecc-5859-4642-bb27-769393383d00";
             Guid retval = Guid.Empty;
             try
             {
@@ -51,7 +51,7 @@ namespace RevitRedevelop.UI
             }
             
             DockablePaneId sm_UserDockablePaneId = new DockablePaneId(retval);
-            app = UIApp.myApp;
+            app = UIEntityApp.myApp;
             DockablePane pane = app.GetDockablePane(sm_UserDockablePaneId);
             pane.Hide();                                    
             //Console.WriteLine("close");

@@ -13,16 +13,29 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using Autodesk.Revit.UI;
+
 namespace RevitRedevelop.UI
 {
     /// <summary>
     /// DrawFloorPlan.xaml 的交互逻辑
     /// </summary>
-    public partial class DrawFloorPlan : UserControl
+    public partial class DrawFloorPlan : Page, Autodesk.Revit.UI.IDockablePaneProvider
     {
-        public DrawFloorPlan()
+         private Autodesk.Revit.UI.UIApplication app;
+         public DrawFloorPlan()
         {
             InitializeComponent();
+        }
+        public void SetupDockablePane(DockablePaneProviderData data)
+        {
+            
+            data.FrameworkElement = this as FrameworkElement;
+            DockablePaneProviderData d = new DockablePaneProviderData();
+
+            data.InitialState = new Autodesk.Revit.UI.DockablePaneState();
+            //data.InitialState.SetFloatingRectangle(new Autodesk.Revit.UI.Rectangle(0,100,200,200));
+            data.InitialState.DockPosition = Autodesk.Revit.UI.DockPosition.Tabbed;
         }
     }
 }

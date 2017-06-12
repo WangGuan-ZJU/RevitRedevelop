@@ -4,17 +4,17 @@
 library
 C#
 .cs
-C:\Users\Administrator\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\
+D:\RevitRedevelop\RevitRedevelop\obj\Debug\
 RevitRedevelop
 none
 false
 DEBUG;TRACE
 
-9131514747
+91635491848
 4-1343515361
-15993698842
-70-709347610
-UI\BaseInfoManage\PaveModelManage.xaml;UI\DrawFloorPlan\DrawFloorPlan.xaml;UI\LoginANDRegister\Login.xaml;UI\LoginANDRegister\Register.xaml;UI\UserInfoManage\PackagePurchase .xaml;UI\Pave\Pave.xaml;UI\ResultExport\ResultExport.xaml;UI\BaseInfoManage\TileProductManage.xaml;UI\UserInfoManage\UserInfo.xaml;
+16296504685
+701045192554
+UI\BaseInfoManage\PaveModelManage.xaml;UI\DrawFloorPlan\DrawFloorPlan.xaml;UI\LoginANDRegister\Login.xaml;UI\LoginANDRegister\Register.xaml;UI\Pave\Pave.xaml;UI\ResultExport\ResultExport.xaml;UI\BaseInfoManage\TileProductManage.xaml;UI\UserInfoManage\PackagePurchase.xaml;UI\UserInfoManage\UserInfo.xaml;
 
 False
 

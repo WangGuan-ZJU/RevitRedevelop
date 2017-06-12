@@ -25,36 +25,7 @@ namespace RevitRedevelop
     [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
     [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
    // [Autodesk.Revit.Attributes.Journaling(Autodesk.Revit.Attributes.JournalingMode.NoCommandData)]
-    public class UserInfoDockablePane : IExternalCommand
-    {
-        UIApplication uiApp;
-        Document m_Doc;
-        public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
-            ElementSet elements)
-        {
-            uiApp = commandData.Application;
-            UIApp.myApp = uiApp;
-            Autodesk.Revit.ApplicationServices.Application app = uiApp.Application;
-            m_Doc = uiApp.ActiveUIDocument.Document;
-
-            string m_mainPageGuid = "ef5b0ecc-5859-4642-bb27-769393383d99";
-
-            Guid retval = Guid.Empty;
-            try
-            {
-                retval = new Guid(m_mainPageGuid);
-            }
-            catch (Exception)
-            {
-            }
-
-            DockablePaneId sm_UserDockablePaneId = new DockablePaneId(retval);
-            DockablePane pane = uiApp.GetDockablePane(sm_UserDockablePaneId);
-            pane.Show();
-            
-            return Result.Succeeded;
-        }
-    }
+   
     public class Ribbon : IExternalApplication
     {
         // 程序集路径
@@ -111,7 +82,7 @@ namespace RevitRedevelop
             pb2.LongDescription = "查看个人信息";
             pb2.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            PushButtonData pbd3 = new PushButtonData("PackagePurchase", "套餐购买", AddInPath, "PackagePurchase");
+            PushButtonData pbd3 = new PushButtonData("PackagePurchase", "套餐购买", AddInPath, "RevitRedevelop.PackagePurchaseDockablePane");
             PushButton pb3 = rp1.AddItem(pbd3) as PushButton;
             pb3.ToolTip = "See Selected Element";
             pb3.LongDescription = "进行套餐的浏览和购买";
@@ -123,7 +94,7 @@ namespace RevitRedevelop
             pb4.LongDescription = "退出当前登录";
             pb4.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            PushButtonData pbd5 = new PushButtonData("DrawFloorPlan", "绘制户型图", AddInPath, "DrawFloorPlan");
+            PushButtonData pbd5 = new PushButtonData("DrawFloorPlan", "绘制户型图", AddInPath, "RevitRedevelop.DrawFloorPlanDockablePane");
             PushButton pb5 = rp2.AddItem(pbd5) as PushButton;
             pb5.ToolTip = "See Selected Element";
             pb5.LongDescription = "进行户型图的选择";
@@ -151,7 +122,7 @@ namespace RevitRedevelop
             PushButton pb9 = rp3.AddItem(pbd9) as PushButton;
             pb9.ToolTip = "See Selected Element";
             pb9.LongDescription = "铺砖模板管理";
-            pb9.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pb9.LargeImage = new BitmapImage(new Uri("F:/StrcturalWall.png"));
 
             PushButtonData pbd10 = new PushButtonData("TileProductManage", " 单品管理", AddInPath, "TileProductManage");
             PushButton pb10 = rp3.AddItem(pbd10) as PushButton;
@@ -173,15 +144,37 @@ namespace RevitRedevelop
         }
         public void RegisterDockableSamplePane(UIControlledApplication application)
         {
+            Guid retval;
+            //个人信息
            // SetCarportNum.AvailabilityClassName = "RevitRedevelop.AvailabilityControll";
-            string temp = "ef5b0ecc-5859-4642-bb27-769393383d99";
-            UI.UserInfo m_mainPage = new UI.UserInfo();
+            string Guid1 = "ef5b0ecc-5859-4642-bb27-769393383d00";
+            UI.UserInfo userInfo = new UI.UserInfo();
 
-            Guid retval = Guid.Empty;
-            retval = new Guid(temp);
-            DockablePaneId sm_UserDockablePaneId = new DockablePaneId(retval);
+            retval = Guid.Empty;
+            retval = new Guid(Guid1);
+            DockablePaneId userInfo_UserDockablePaneId = new DockablePaneId(retval);
 
-            application.RegisterDockablePane(sm_UserDockablePaneId, "个人信息", m_mainPage as IDockablePaneProvider);
+            application.RegisterDockablePane(userInfo_UserDockablePaneId, "个人信息", userInfo as IDockablePaneProvider);
+
+            //套餐购买
+            string Guid2 = "ef5b0ecc-5859-4642-bb27-769393383d01";
+            UI.PackagePurchase PackagePurchase = new UI.PackagePurchase();
+
+            retval = Guid.Empty;
+            retval = new Guid(Guid2);
+            DockablePaneId PackagePurchase_UserDockablePaneId = new DockablePaneId(retval);
+
+            application.RegisterDockablePane(PackagePurchase_UserDockablePaneId, "套餐购买", PackagePurchase as IDockablePaneProvider);
+
+            //绘制户型图
+            string Guid3 = "ef5b0ecc-5859-4642-bb27-769393383d02";
+            UI.DrawFloorPlan DrawFloorPlan = new UI.DrawFloorPlan();
+
+            retval = Guid.Empty;
+            retval = new Guid(Guid3);
+            DockablePaneId DrawFloorPlan_UserDockablePaneId = new DockablePaneId(retval);
+
+            application.RegisterDockablePane(DrawFloorPlan_UserDockablePaneId, "绘制户型图", DrawFloorPlan as IDockablePaneProvider);
         }
         public BitmapImage GetBitmapImage(string imageName)
         {

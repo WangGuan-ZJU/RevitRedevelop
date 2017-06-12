@@ -108,7 +108,9 @@
     <Content Include="Icon\StrcturalWall.png" />
     <Content Include="Icon\个人信息.png" />
     <Content Include="Icon\套餐购买.png" />
-    <Content Include="RevitRedevelop.addin" />
+    <Content Include="RevitRedevelop.addin">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Page Include="UI\BaseInfoManage\PaveModelManage.xaml">

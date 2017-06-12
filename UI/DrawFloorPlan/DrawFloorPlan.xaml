@@ -6,7 +6,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="349" d:DesignWidth="394" Foreground="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">
     <Grid Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Margin="0,0,0,0">
-        <TabControl HorizontalAlignment="Left" Height="329" Margin="10,0,-1,10" VerticalAlignment="Bottom" Width="385" FontSize="16">
+        <TabControl HorizontalAlignment="Left" Margin="10,10,-1,10" Width="385" FontSize="16">
             <TabItem Header="搜索户型">
                 <Grid Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Margin="0,-2,0,-28">
                     <Grid.RowDefinitions>
@@ -40,8 +40,8 @@
                     <Button Content="柱子" HorizontalAlignment="Left" Margin="42,100,0,0" VerticalAlignment="Top" Width="93" Height="41"/>
                     <Button Content="确定" HorizontalAlignment="Left" Margin="292,260,0,0" VerticalAlignment="Top" Width="75"/>
                     <Button Content="收藏" HorizontalAlignment="Left" Margin="198,260,0,0" VerticalAlignment="Top" Width="75"/>
-                    <Button Content="墙体绘制" HorizontalAlignment="Left" Margin="102,22,0,0" VerticalAlignment="Top" Width="59" Height="29" FontSize="12"/>
-                    <Button Content="墙体绘制" HorizontalAlignment="Left" Margin="184,22,0,0" VerticalAlignment="Top" Width="68" Height="29" FontSize="12"/>
+                    <Button Content="门" HorizontalAlignment="Left" Margin="102,22,0,0" VerticalAlignment="Top" Width="59" Height="29" FontSize="12"/>
+                    <Button Content="窗" HorizontalAlignment="Left" Margin="184,22,0,0" VerticalAlignment="Top" Width="68" Height="29" FontSize="12"/>
                     <Grid HorizontalAlignment="Left" Height="1" Margin="12,76,0,0" VerticalAlignment="Top" Width="357" Background="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"/>
                     <Button Content="柜子" HorizontalAlignment="Left" Margin="244,100,0,0" VerticalAlignment="Top" Width="93" Height="41"/>
                     <Button Content="占位不铺贴" HorizontalAlignment="Left" Margin="42,171,0,0" VerticalAlignment="Top" Width="93" Height="41"/>

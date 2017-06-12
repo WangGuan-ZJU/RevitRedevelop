@@ -87,3 +87,36 @@ D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\UserInfoManage\PackagePurchase.bam
 D:\RevitRedevelop\RevitRedevelop\obj\Debug\UI\UserInfoManage\PackagePurchase.g.cs
 D:\RevitRedevelop\RevitRedevelop\bin\Debug\RevitAPI.dll
 D:\RevitRedevelop\RevitRedevelop\bin\Debug\RevitAPIUI.dll
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\RevitRedevelop.dll
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\RevitRedevelop.pdb
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\MongoDB.Bson.dll
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\MongoDB.Driver.dll
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\RevitAPI.dll
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\RevitAPIUI.dll
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\MongoDB.Bson.xml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\MongoDB.Driver.xml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\BaseInfoManage\PaveModelManage.baml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\DrawFloorPlan.baml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\LoginANDRegister\Login.baml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\LoginANDRegister\Register.baml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\Pave\Pave.baml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\ResultExport\ResultExport.baml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\BaseInfoManage\TileProductManage.baml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\UserInfoManage\PackagePurchase.baml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\UserInfoManage\UserInfo.baml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\BaseInfoManage\PaveModelManage.g.cs
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\DrawFloorPlan.g.cs
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\LoginANDRegister\Login.g.cs
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\LoginANDRegister\Register.g.cs
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\Pave\Pave.g.cs
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\ResultExport\ResultExport.g.cs
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\BaseInfoManage\TileProductManage.g.cs
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\UserInfoManage\PackagePurchase.g.cs
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\UserInfoManage\UserInfo.g.cs
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop_MarkupCompile.cache
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.g.resources
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.dll
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.pdb

@@ -18,6 +18,9 @@ namespace RevitRedevelop
     public static class UIEntityApp
     {
         public static Autodesk.Revit.UI.UIApplication myApp;
+        public static Autodesk.Revit.DB.ElementSet ElementSet;
+        public static Autodesk.Revit.UI.ExternalCommandData commandData;
+        public static string message;
         //public UIApp(Autodesk.Revit.UI.UIApplication app)
         //{
         //    myApp = app;

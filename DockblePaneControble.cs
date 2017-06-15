@@ -20,24 +20,29 @@ namespace RevitRedevelop
         {
             uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
-            Autodesk.Revit.ApplicationServices.Application app = uiApp.Application;
-            m_Doc = uiApp.ActiveUIDocument.Document;
+            UIEntityApp.ElementSet = elements;
+            UIEntityApp.commandData = commandData;
+            UIEntityApp.message = message;
+            //Autodesk.Revit.ApplicationServices.Application app = uiApp.Application;
+            //m_Doc = uiApp.ActiveUIDocument.Document;
 
-            string m_mainPageGuid = "ef5b0ecc-5859-4642-bb27-769393383d00";
+            //string m_mainPageGuid = "ef5b0ecc-5859-4642-bb27-769393383d00";
 
-            Guid retval = Guid.Empty;
-            try
-            {
-                retval = new Guid(m_mainPageGuid);
-            }
-            catch (Exception)
-            {
-            }
+            //Guid retval = Guid.Empty;
+            //try
+            //{
+            //    retval = new Guid(m_mainPageGuid);
+            //}
+            //catch (Exception)
+            //{
+            //}
 
-            DockablePaneId sm_UserDockablePaneId = new DockablePaneId(retval);
-            DockablePane pane = uiApp.GetDockablePane(sm_UserDockablePaneId);
-            pane.Show();
-
+            //DockablePaneId sm_UserDockablePaneId = new DockablePaneId(retval);
+            //DockablePane pane = uiApp.GetDockablePane(sm_UserDockablePaneId);
+            //pane.Show();
+            //DrawFloorPlan test =new DrawFloorPlan()
+            uiApp = commandData.Application;
+            uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.ArchitecturalWall));
             return Result.Succeeded;
         }
     }

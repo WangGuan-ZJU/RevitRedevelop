@@ -35,7 +35,7 @@
             </TabItem>
             <TabItem Header="绘制户型图">
                 <Grid Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">
-                    <Button Content="墙体绘制" HorizontalAlignment="Left" Margin="16,22,0,0" VerticalAlignment="Top" Width="64" Height="29" FontSize="12"/>
+                    <Button Content="墙体绘制" HorizontalAlignment="Left" Margin="16,22,0,0" VerticalAlignment="Top" Width="64" Height="29" FontSize="12" Click="CreateWall"/>
                     <Button Content="导入DWG户型图" HorizontalAlignment="Left" Margin="272,34,0,0" VerticalAlignment="Top" Width="97" Height="22" FontSize="12"/>
                     <Button Content="柱子" HorizontalAlignment="Left" Margin="42,100,0,0" VerticalAlignment="Top" Width="93" Height="41"/>
                     <Button Content="确定" HorizontalAlignment="Left" Margin="292,260,0,0" VerticalAlignment="Top" Width="75"/>

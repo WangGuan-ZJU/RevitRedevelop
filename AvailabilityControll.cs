@@ -13,7 +13,7 @@ namespace RevitRedevelop
                                      Autodesk.Revit.DB.CategorySet selectedCategories)
         {
           
-            return true;
+            return false;
         }
     }
 }

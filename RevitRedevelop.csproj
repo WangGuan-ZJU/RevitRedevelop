@@ -70,23 +70,43 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AvailabilityControll.cs" />
+    <Compile Include="ConstGuid.cs" />
     <Compile Include="DockblePaneControble.cs" />
+    <Compile Include="PaintData\DrawFloorPlanData.cs" />
     <Compile Include="UIEntityApp.cs" />
     <Compile Include="DB\DBDao.cs" />
     <Compile Include="DB\DBProcess.cs" />
+    <Compile Include="UI\BaseInfoManage\FloorPlanManage.xaml.cs">
+      <DependentUpon>FloorPlanManage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\BaseInfoManage\PaveModelManage.xaml.cs">
       <DependentUpon>PaveModelManage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DrawFloorPlan\ChooseSize.xaml.cs">
+      <DependentUpon>ChooseSize.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\DrawFloorPlan\DrawFloorPlan.xaml.cs">
       <DependentUpon>DrawFloorPlan.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RibbonUI.cs" />
+    <Compile Include="UI\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LoginANDRegister\Register.xaml.cs">
+      <DependentUpon>Register.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\LoginANDRegister\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RibbonUI.cs" />
-    <Compile Include="UI\LoginANDRegister\Register.xaml.cs">
-      <DependentUpon>Register.xaml</DependentUpon>
+    <Compile Include="UI\LoginANDRegister\ForgetPassWord.xaml.cs">
+      <DependentUpon>ForgetPassWord.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PaveModelLib.xaml.cs">
+      <DependentUpon>PaveModelLib.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\Pave\Pave.xaml.cs">
       <DependentUpon>Pave.xaml</DependentUpon>
@@ -113,7 +133,15 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="UI\BaseInfoManage\FloorPlanManage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UI\BaseInfoManage\PaveModelManage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\DrawFloorPlan\ChooseSize.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -121,11 +149,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UI\LoginANDRegister\Register.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UI\LoginANDRegister\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\LoginANDRegister\Register.xaml">
+    <Page Include="UI\LoginANDRegister\ForgetPassWord.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\PaveModelLib.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -152,6 +188,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

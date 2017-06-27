@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 
-91635491848
+131627269741
 4-1343515361
-201663641302
+281525840576
 201672713883
-UI\BaseInfoManage\PaveModelManage.xaml;UI\DrawFloorPlan\DrawFloorPlan.xaml;UI\LoginANDRegister\Login.xaml;UI\LoginANDRegister\Register.xaml;UI\Pave\Pave.xaml;UI\ResultExport\ResultExport.xaml;UI\BaseInfoManage\TileProductManage.xaml;UI\UserInfoManage\PackagePurchase.xaml;UI\UserInfoManage\UserInfo.xaml;
+UI\BaseInfoManage\FloorPlanManage.xaml;UI\BaseInfoManage\PaveModelManage.xaml;UI\DrawFloorPlan\ChooseSize.xaml;UI\DrawFloorPlan\DrawFloorPlan.xaml;UI\LoginANDRegister\Register.xaml;UI\LoginANDRegister\Login.xaml;UI\LoginANDRegister\ForgetPassWord.xaml;UI\PaveModelLib.xaml;UI\Pave\Pave.xaml;UI\ResultExport\ResultExport.xaml;UI\BaseInfoManage\TileProductManage.xaml;UI\UserInfoManage\PackagePurchase.xaml;UI\UserInfoManage\UserInfo.xaml;
 
 False
 

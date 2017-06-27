@@ -120,3 +120,13 @@ C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\Revit
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.g.resources
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.dll
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.pdb
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\LoginANDRegister\ForgetPassWord.baml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\LoginANDRegister\ForgetPassWord.g.cs
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\BaseInfoManage\FloorPlanManage.baml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\PaveModelLib.baml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\BaseInfoManage\FloorPlanManage.g.cs
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\PaveModelLib.g.cs
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\ChooseSize.baml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\ChooseSize.g.cs
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.UI.Form1.resources
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.csproj.GenerateResource.Cache

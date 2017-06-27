@@ -18,21 +18,36 @@ using Autodesk.Revit.UI;
 namespace RevitRedevelop.UI
 {
     /// <summary>
-    /// Login.xaml 的交互逻辑
+    /// UserControl1.xaml 的交互逻辑
     /// </summary>
-    public partial class Login :Page,Autodesk.Revit.UI.IDockablePaneProvider
+    public partial class Login : Window
     {
         public Login()
         {
             InitializeComponent();
         }
-        public void SetupDockablePane(DockablePaneProviderData data)
-        {
-            data.FrameworkElement = this as FrameworkElement;
-            DockablePaneProviderData d = new DockablePaneProviderData();
 
-            data.InitialState = new Autodesk.Revit.UI.DockablePaneState();
-            data.InitialState.DockPosition = Autodesk.Revit.UI.DockPosition.Left;
+        private void login(object sender, RoutedEventArgs e)
+        {
+            //**********************************
+            //登录逻辑UserLogin.cs
+            //**********************************
+            //登陆成功
+            UIEntityApp.InitUIAfterLogin();
+            this.Close();
+        }
+
+        private void LoginAndRegister(object sender, RoutedEventArgs e)
+        {
+            Register register = new Register();
+            register.Show();
+            this.Close();
+        }
+
+        private void ForgetPassword(object sender, RoutedEventArgs e)
+        {
+            ForgetPassWord forgetPassword = new ForgetPassWord();
+            forgetPassword.Show();
         }
     }
 }

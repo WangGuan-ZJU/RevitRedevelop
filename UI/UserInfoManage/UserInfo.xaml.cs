@@ -20,23 +20,14 @@ namespace RevitRedevelop.UI
     /// <summary>
     /// UserInfo.xaml 的交互逻辑
     /// </summary>
-    public partial class UserInfo : Page, Autodesk.Revit.UI.IDockablePaneProvider
+    public partial class UserInfo :Window
     {
         private Autodesk.Revit.UI.UIApplication app;
         public UserInfo()
         {
             InitializeComponent();
         }
-        public void SetupDockablePane(DockablePaneProviderData data)
-        {
-            
-            data.FrameworkElement = this as FrameworkElement;
-            DockablePaneProviderData d = new DockablePaneProviderData();
-
-            data.InitialState = new Autodesk.Revit.UI.DockablePaneState();
-         //   data.InitialState.SetFloatingRectangle(new Autodesk.Revit.UI.Rectangle(0,100,200,200));
-            data.InitialState.DockPosition = Autodesk.Revit.UI.DockPosition.Tabbed;
-        }
+       
         private void Close(object sender, RoutedEventArgs e)
         {
             string guid = "ef5b0ecc-5859-4642-bb27-769393383d00";

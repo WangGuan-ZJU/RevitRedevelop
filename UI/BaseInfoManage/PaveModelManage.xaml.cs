@@ -13,16 +13,23 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace RevitRedevelop.UI.BaseInfoManage
+using Autodesk.Revit.UI;
+
+namespace RevitRedevelop.UI
 {
     /// <summary>
     /// PaveModelManage.xaml 的交互逻辑
     /// </summary>
-    public partial class PaveModelManage : UserControl
-    {
+    public partial class PaveModelManage : Window{
         public PaveModelManage()
         {
             InitializeComponent();
+        }
+
+        private void OpenPaveModelLib(object sender, RoutedEventArgs e)
+        {
+            PaveModelLib pavemodellib = new PaveModelLib();
+            pavemodellib.Show();
         }
     }
 }

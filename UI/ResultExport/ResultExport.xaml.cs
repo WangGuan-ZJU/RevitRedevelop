@@ -13,12 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using Autodesk.Revit.UI;
+
 namespace RevitRedevelop.UI
 {
     /// <summary>
     /// ResultExport.xaml 的交互逻辑
     /// </summary>
-    public partial class ResultExport : UserControl
+    public partial class ResultExport : Window
     {
         public ResultExport()
         {

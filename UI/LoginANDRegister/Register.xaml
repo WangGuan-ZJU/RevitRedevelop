@@ -1,11 +1,54 @@
-﻿<UserControl x:Class="RevitRedevelop.UI.LoginANDRegister.Register"
+﻿<Window x:Class="RevitRedevelop.UI.Register"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             mc:Ignorable="d"  Height="644" Width="413">
     <Grid>
-            
+        <ScrollViewer  HorizontalScrollBarVisibility="Auto" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Margin="0,0,0,-2" FontSize="14" >
+            <StackPanel>
+                <Grid>
+                    <Label Content="注册账号" HorizontalAlignment="Left" Height="25" Margin="10,6,0,0" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.424,-1" FontSize="14"/>
+                    <Label Content="手机号(*)" HorizontalAlignment="Left" Margin="16,93,0,0" VerticalAlignment="Top"/>
+                    <Label Content="手机验证码(*)" HorizontalAlignment="Left" Margin="11,136,0,0" VerticalAlignment="Top"/>
+                    <Label Content="请输入密码(*)" HorizontalAlignment="Left" Margin="16,174,0,0" VerticalAlignment="Top"/>
+                    <Label Content="用户名(*)" HorizontalAlignment="Left" Margin="16,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3,-0.16"/>
+                    <Label Content="再次输入密码(*)" HorizontalAlignment="Left" Margin="15,218,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="126,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="108,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="108,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="125,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="108,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+                    <Grid HorizontalAlignment="Left" Height="1" Margin="10,36,0,0" VerticalAlignment="Top" Width="372" Background="Black" Grid.ColumnSpan="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="29*"/>
+                            <ColumnDefinition Width="11*"/>
+                            <ColumnDefinition Width="332*"/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                    <Button Content="关闭" HorizontalAlignment="Left" Margin="269,569,0,0" VerticalAlignment="Top" Width="111" RenderTransformOrigin="0.067,-0.158" Click="Close" FontSize="12" Height="22"/>
+                    <Grid HorizontalAlignment="Left" Height="1" Margin="16,529,0,0" VerticalAlignment="Top" Width="356" Background="Black"/>
+                    <Button Content="发送验证码" HorizontalAlignment="Left" Margin="297,99,0,0" VerticalAlignment="Top" Width="75" Click="SendVerificationCode" FontSize="12"/>
+                    <Label Content="身份证号码" HorizontalAlignment="Left" Margin="17,260,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="125,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+                    <Label Content="真实姓名" HorizontalAlignment="Left" Margin="31,302,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="126,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="电子邮箱" HorizontalAlignment="Left" Margin="31,344,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="125,346,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="125,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="0.117,-1.913"/>
+                    <Label Content="联系地址" HorizontalAlignment="Left" Margin="31,384,0,0" VerticalAlignment="Top"/>
+                    <Label Content="备用联系电话" HorizontalAlignment="Left" Margin="18,425,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="132,428,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215"/>
+                    <Label Content="验证码(*)" HorizontalAlignment="Left" Margin="31,466,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="132,467,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Image HorizontalAlignment="Left" Height="29" Margin="283,465,0,0" VerticalAlignment="Top" Width="78" Source="../../Icon/StrcturalWall.png"/>
+                    <Label Content="输入收到的六位验证码" HorizontalAlignment="Left" Margin="236,136,0,0" VerticalAlignment="Top" FontSize="12" FontStyle="Italic"/>
+                    <Label Content="6-12位的数字字母组合" HorizontalAlignment="Left" Margin="242,56,0,0" VerticalAlignment="Top" FontSize="12" Width="139" FontFamily="{DynamicResource {x:Static SystemFonts.CaptionFontFamilyKey}}" FontStyle="Italic"/>
+                    <Label Content="(请输入右边图片中的字符)" HorizontalAlignment="Left" Margin="31,499,0,0" VerticalAlignment="Top" FontSize="12"/>
+                    <Label Content="带*号的为必填" HorizontalAlignment="Left" Margin="17,535,0,38"/>
+                    <Button Content="确认注册" HorizontalAlignment="Left" Margin="135,569,0,0" VerticalAlignment="Top" Width="111" Height="22" Click="Enroll" FontSize="12"/>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
-</UserControl>
+</Window>

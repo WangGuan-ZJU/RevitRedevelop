@@ -13,16 +13,35 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace RevitRedevelop.UI.LoginANDRegister
+namespace RevitRedevelop.UI
 {
     /// <summary>
     /// Register.xaml 的交互逻辑
     /// </summary>
-    public partial class Register : UserControl
+    public partial class Register : Window
     {
         public Register()
         {
             InitializeComponent();
+        }
+
+        private void Close(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Enroll(object sender, RoutedEventArgs e)
+        {
+            //**********************************
+            //注册逻辑UserEnroll.cs
+            //**********************************
+            //注册成功
+            UIEntityApp.InitUIAfterLogin();
+            this.Close();
+        }
+        private void SendVerificationCode(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -12,13 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Autodesk.Revit.UI;
 
 namespace RevitRedevelop.UI
 {
     /// <summary>
     /// TileProductManage.xaml 的交互逻辑
     /// </summary>
-    public partial class TileProductManage : UserControl
+    public partial class TileProductManage : Window
     {
         public TileProductManage()
         {

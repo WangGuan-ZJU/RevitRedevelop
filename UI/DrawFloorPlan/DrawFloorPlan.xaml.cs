@@ -62,8 +62,8 @@ namespace RevitRedevelop.UI
             //curves.Add(line4);
             ////create wall
             //Wall.Create(uiDoc.Document, curves, false);
-            app = UIEntityApp.myApp;
-            PackagePurchaseDockablePane test = new PackagePurchaseDockablePane();
+           // app = UIEntityApp.myApp;
+          //  PackagePurchaseDockablePane test = new PackagePurchaseDockablePane();
            // test.Execute(UIEntityApp.commandData,"" , UIEntityApp.ElementSet);
             //string guid = "ef5b0ecc-5859-4642-bb27-769393383d02";
             //Guid retval = Guid.Empty;
@@ -79,8 +79,9 @@ namespace RevitRedevelop.UI
             //DockablePaneId sm_UserDockablePaneId = new DockablePaneId(retval);
             //DockablePane pane = app.GetDockablePane(sm_UserDockablePaneId);
             //pane.Hide();
+          
+          //  app.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.ArchitecturalWall));
             
-            app.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.Close));
         }
     }
 }

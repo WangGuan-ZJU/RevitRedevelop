@@ -130,3 +130,5 @@ C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\Dr
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\ChooseSize.g.cs
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.UI.Form1.resources
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.csproj.GenerateResource.Cache
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\ChooseDoorSize.baml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\ChooseDoorSize.g.cs

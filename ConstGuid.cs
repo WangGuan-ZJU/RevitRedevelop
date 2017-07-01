@@ -13,6 +13,7 @@ namespace RevitRedevelop
         public const string PackagePurchaseGuid = "ef5b0ecc-5859-4642-bb27-769393383d01";
         public const string DrawFloorPlanGuid = "ef5b0ecc-5859-4642-bb27-769393383d02";
         public const string ChooseSizeGuid = "ef5b0ecc-5859-4642-bb27-769393383d12";
+        public const string ChooseDoorSizeGuid = "ef5b0ecc-5859-4642-bb27-769393383d22";
         public const string PaveGuid = "ef5b0ecc-5859-4642-bb27-769393383d03";
         public const string ResultExportGuid = "ef5b0ecc-5859-4642-bb27-769393383d04";
         public const string FloorPlanManageGuid = "ef5b0ecc-5859-4642-bb27-769393383d05";

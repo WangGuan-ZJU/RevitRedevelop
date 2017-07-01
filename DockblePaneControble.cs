@@ -306,6 +306,77 @@ namespace RevitRedevelop
             return Result.Succeeded;
         }
     }
+
+    [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
+    [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
+    public class ChooseDoorSizeDoor : IExternalCommand
+    {
+        UIApplication uiApp;
+        Document m_Doc;
+        public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
+            ElementSet elements)
+        {
+            uiApp = commandData.Application;
+            UIEntityApp.myApp = uiApp;
+            UIEntityApp.ElementSet = elements;
+            UIEntityApp.commandData = commandData;
+            UIEntityApp.message = message;
+            string m_mainPageGuid = ConstGuid.ChooseDoorSizeGuid;
+
+            Guid retval = Guid.Empty;
+            try
+            {
+                retval = new Guid(m_mainPageGuid);
+            }
+            catch (Exception)
+            {
+            }
+
+            DockablePaneId sm_UserDockablePaneId = new DockablePaneId(retval);
+            DockablePane pane = uiApp.GetDockablePane(sm_UserDockablePaneId);
+            pane.Show();
+
+            return Result.Succeeded;
+        }
+    }
+    [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
+    [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
+    public class GenerateDoor : IExternalCommand
+    {
+        UIApplication uiApp;
+        Document m_Doc;
+        public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
+            ElementSet elements)
+        {
+            uiApp = commandData.Application;
+            UIEntityApp.myApp = uiApp;
+            UIEntityApp.ElementSet = elements;
+            UIEntityApp.commandData = commandData;
+            UIEntityApp.message = message;
+            UIDocument uidocument = uiApp.ActiveUIDocument;
+            Document RevitDoc = uidocument.Document;
+            Transaction trans = new Transaction(RevitDoc, "ExComm");
+            trans.Start();
+
+            FilteredElementCollector filteredelements = new FilteredElementCollector(RevitDoc);
+            ElementClassFilter classFilter = new ElementClassFilter(typeof(FamilyInstance));
+            ElementCategoryFilter catFilter = new ElementCategoryFilter(BuiltInCategory.OST_Doors);            
+            LogicalAndFilter logicalFilter = new LogicalAndFilter(classFilter, catFilter);
+            filteredelements=filteredelements.WherePasses(logicalFilter);
+            //IList<Element> list = filteredelements.ToElements();
+
+            foreach (Element door in filteredelements)
+            {
+                Parameter parameter = door.get_Parameter(BuiltInParameter.DOOR_HEIGHT);
+                if (parameter == null)
+                {
+                    MessageBox.Show("nodoor");
+                }
+            }
+            trans.Commit();
+            return Result.Succeeded;
+        }
+    }
     [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
     [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
     public class DrawWindow : IExternalCommand
@@ -374,7 +445,25 @@ namespace RevitRedevelop
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
-            uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.PlaceAComponent));
+            uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.Default3DView));
+            return Result.Succeeded;
+        }
+    }
+    [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
+    [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
+    public class TwoDPreview : IExternalCommand
+    {
+        UIApplication uiApp;
+        Document m_Doc;
+        public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
+            ElementSet elements)
+        {
+            uiApp = commandData.Application;
+            UIEntityApp.myApp = uiApp;
+            UIEntityApp.ElementSet = elements;
+            UIEntityApp.commandData = commandData;
+            UIEntityApp.message = message;
+         //   uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.));
             return Result.Succeeded;
         }
     }

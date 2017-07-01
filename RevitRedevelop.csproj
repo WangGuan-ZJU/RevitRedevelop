@@ -82,6 +82,9 @@
     <Compile Include="UI\BaseInfoManage\PaveModelManage.xaml.cs">
       <DependentUpon>PaveModelManage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\DrawFloorPlan\ChooseDoorSize.xaml.cs">
+      <DependentUpon>ChooseDoorSize.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\DrawFloorPlan\ChooseSize.xaml.cs">
       <DependentUpon>ChooseSize.xaml</DependentUpon>
     </Compile>
@@ -138,6 +141,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\BaseInfoManage\PaveModelManage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\DrawFloorPlan\ChooseDoorSize.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

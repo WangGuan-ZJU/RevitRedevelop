@@ -96,6 +96,10 @@ namespace RevitRedevelop
         PushButton pb5_13;    
         PushButtonData pbd6_1;
         PushButton pb6_1;
+        PushButtonData pbd6_1_1;
+        PushButton pb6_1_1;
+        PushButtonData pbd6_1_2;
+        PushButton pb6_1_2;
         PushButtonData pbd6_2;
         PushButton pb6_2;
         PushButtonData pbd6_3;
@@ -341,23 +345,41 @@ namespace RevitRedevelop
             TextBox txt3 = rp2_1.AddItem(txd3) as TextBox;
             txt3.Width = 100;
 
-            pbd6_1 = new PushButtonData("AreaSplit", "区域划分", AddInPath, "RevitRedevelop.Pave");
-            pb6_1 = rp2_2.AddItem(pbd6_1) as PushButton;
-            pb6_1.ToolTip = "区域划分";
-            pb6_1.LongDescription = "区域划分";
+            PulldownButtonData pudbd6 = new PulldownButtonData("AreaSplit", "区域划分");
+            PulldownButton pudb6 = rp2_2.AddItem(pudbd6) as PulldownButton;
+
+            pbd6_1 = new PushButtonData("AreaPartition", "铺贴区域", AddInPath, "RevitRedevelop.AreaPartition");
+            pb6_1 = pudb6.AddPushButton(pbd6_1);
+            pb6_1.ToolTip = "铺贴区域";
+            pb6_1.LongDescription = "铺贴区域";
             pb6_1.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd6_2 = new PushButtonData("ChoosePaveModel", "模板选择", AddInPath, "Pave");
-            pb6_2 = rp2_2.AddItem(pbd6_2) as PushButton;
-            pb6_2.ToolTip = "模板选择";
-            pb6_2.LongDescription = "模板选择";
+            pbd6_1_1 = new PushButtonData("DoorStone", "门槛石", AddInPath, "RevitRedevelop.DoorStone");
+            pb6_1_1 = pudb6.AddPushButton(pbd6_1_1);
+            pb6_1_1.ToolTip = "门槛石";
+            pb6_1_1.LongDescription = "门槛石";
+            pb6_1_1.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+
+            pbd6_1_2 = new PushButtonData("SplitLine", "区域划分线", AddInPath, "RevitRedevelop.SplitLine");
+            pb6_1_2 = pudb6.AddPushButton(pbd6_1_2);
+            pb6_1_2.ToolTip = "区域划分线";
+            pb6_1_2.LongDescription = "区域划分线";
+            pb6_1_2.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+
+            PulldownButtonData pudbd7 = new PulldownButtonData("ChooseModel", "模板选择");
+            PulldownButton pudb7 = rp2_2.AddItem(pudbd7) as PulldownButton;
+
+            pbd6_2 = new PushButtonData("ChooseModel", "门槛石", AddInPath, "RevitRedevelop.ChooseModel");
+            pb6_2 = pudb6.AddPushButton(pbd2);
+            pb6_2.ToolTip = "门槛石";
+            pb6_2.LongDescription = "门槛石";
             pb6_2.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd6_3 = new PushButtonData("AdaptPave", "适配铺贴", AddInPath, "Pave");
-            pb6_3 = rp2_2.AddItem(pbd6_3) as PushButton;
-            pb6_3.ToolTip = "适配铺贴";
-            pb6_3.LongDescription = "适配铺贴";
-            pb6_3.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbd6_1_2 = new PushButtonData("SplitLine", "区域划分线", AddInPath, "RevitRedevelop.SplitLine");
+            pb6_1_2 = pudb6.AddPushButton(pbd6_1_2);
+            pb6_1_2.ToolTip = "区域划分线";
+            pb6_1_2.LongDescription = "区域划分线";
+            pb6_1_2.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
             pbd7 = new PushButtonData("ResultExport", "      出图    ", AddInPath, "RevitRedevelop.ResultExport");
             pb7 = rp2_3.AddItem(pbd7) as PushButton;

@@ -485,6 +485,25 @@ namespace RevitRedevelop
             return Result.Succeeded;
         }
     }
+    
+    [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
+    [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
+    public class AreaPartition : IExternalCommand
+    {
+        UIApplication uiApp;
+        Document m_Doc;
+        public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
+          ElementSet elements)
+        {
+            uiApp = commandData.Application;
+            UIEntityApp.myApp = uiApp;
+            UIEntityApp.ElementSet = elements;
+            UIEntityApp.commandData = commandData;
+            UIEntityApp.message = message;
+            uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.Area));
+            return Result.Succeeded;
+        }
+    }
     [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
     [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
     public class Pave : IExternalCommand

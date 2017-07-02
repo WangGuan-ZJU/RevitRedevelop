@@ -132,3 +132,4 @@ C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\Revit
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.csproj.GenerateResource.Cache
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\ChooseDoorSize.baml
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\ChooseDoorSize.g.cs
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.csprojResolveAssemblyReference.cache

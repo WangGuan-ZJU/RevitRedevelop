@@ -1,22 +1,38 @@
 ﻿<Window x:Class="RevitRedevelop.UI.FloorPlanManage"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" Foreground="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Width="415" Height="697">
-    <Grid>
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="673" Width="860.1">
+    <Grid  Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">
         <ScrollViewer>
             <Grid>
-                <Label Content="户型图管理" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="81" FontSize="14"/>
-                <Grid HorizontalAlignment="Left" Height="1" Margin="10,30,0,0" VerticalAlignment="Top" Width="368" Background="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"/>
-                <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="596" Margin="10,35,0,0" Stroke="Black" VerticalAlignment="Top" Width="368"/>
-                <Button Content="完成编辑" HorizontalAlignment="Left" Margin="303,638,0,0" VerticalAlignment="Top" Width="75"/>
-                <Image HorizontalAlignment="Left" Height="221" Margin="29,52,0,0" VerticalAlignment="Top" Width="307" Source="../../Icon/StrcturalWall.png"/>
-                <Label Content="户型图的介绍" HorizontalAlignment="Left" Height="30" Margin="41,290,0,0" VerticalAlignment="Top" Width="305"/>
-                <Image HorizontalAlignment="Left" Height="221" Margin="29,327,0,0" VerticalAlignment="Top" Width="307" Source="../../Icon/StrcturalWall.png"/>
-                <Label Content="户型图的介绍" HorizontalAlignment="Left" Height="30" Margin="41,565,0,0" VerticalAlignment="Top" Width="305"/>
 
+                <Label Content="户型图管理" HorizontalAlignment="Left" Margin="16,1,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Grid HorizontalAlignment="Left" Height="1" Margin="10,30,0,0" VerticalAlignment="Top" Width="811" Background="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}" Grid.ColumnSpan="2"/>
+                <Label Content="筛选条件" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+                <Grid HorizontalAlignment="Left" Height="1" Margin="7,82,0,0" VerticalAlignment="Top" Width="811" Background="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}" Grid.ColumnSpan="2"/>
+                <Grid HorizontalAlignment="Left" Height="41" Margin="84,36,0,0" VerticalAlignment="Top" Width="1" Background="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"/>
+                <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="507" Margin="16,97,0,0" Stroke="Black" VerticalAlignment="Top" Width="802" Grid.ColumnSpan="2"/>
+                <Button Content="确定" HorizontalAlignment="Left" Margin="743,613,0,0" VerticalAlignment="Top" Width="75"/>
+
+                <Label Content="房间大小" HorizontalAlignment="Left" Margin="99,43,0,0" VerticalAlignment="Top"/>
+                <ComboBox HorizontalAlignment="Left" Margin="164,45,0,0" VerticalAlignment="Top" Width="78">
+                    <ListBoxItem Content="70m*m~80m*m"/>
+                    <ListBoxItem Content="80~90m*m"/>
+                    <ListBoxItem Content="100~110m*m"/>
+                    <ListBoxItem Content="110~120m*m"/>
+                    <ListBoxItem Content="120~130m*m"/>
+                </ComboBox>
+                <Label Content="房间类型" HorizontalAlignment="Left" Margin="272,43,0,0" VerticalAlignment="Top"/>
+                <ComboBox HorizontalAlignment="Left" Margin="352,45,0,0" VerticalAlignment="Top" Width="78" RenderTransformOrigin="2.256,0.81">
+                    <ListBoxItem Content="一室一厅"/>
+                    <ListBoxItem Content="一室两厅"/>
+                    <ListBoxItem Content="两室两厅"/>
+                    <ListBoxItem Content="三室两厅"/>
+                    <ListBoxItem Content="四室两厅"/>
+                    <ListBoxItem Content="更多"/>
+                </ComboBox>
             </Grid>
         </ScrollViewer>
+
     </Grid>
 </Window>

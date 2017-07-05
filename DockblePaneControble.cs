@@ -14,16 +14,17 @@ namespace RevitRedevelop
     [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
     public class UserInfoDockablePane : IExternalCommand
     {
-        UIApplication uiApp;
-        Document m_Doc;
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
             ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
+            Document document = commandData.Application.ActiveUIDocument.Document;
             Autodesk.Revit.ApplicationServices.Application app = uiApp.Application;
             //m_Doc = uiApp.ActiveUIDocuenmt.Document;
             RibbonPanel ribbonpanel = null;
@@ -68,11 +69,13 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
             ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
             Autodesk.Revit.ApplicationServices.Application app = uiApp.Application;
             //m_Doc = uiApp.ActiveUIDocuenmt.Document;
             RibbonPanel ribbonpanel = null;
@@ -115,12 +118,13 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
             ElementSet elements)
         {
-            UIApplication uiApp;
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
             Autodesk.Revit.ApplicationServices.Application app = uiApp.Application;
             MessageBoxButtons messButton = MessageBoxButtons.OKCancel;
             DialogResult dr = MessageBox.Show("确定要退出吗?", "退出系统", messButton);
@@ -139,28 +143,61 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
             ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
             Autodesk.Revit.ApplicationServices.Application app = uiApp.Application;
             m_Doc = uiApp.ActiveUIDocument.Document;
-
-            string m_mainPageGuid = ConstGuid.DrawFloorPlanGuid;
-
-            Guid retval = Guid.Empty;
-            try
-            {
-                retval = new Guid(m_mainPageGuid);
-            }
-            catch (Exception)
-            {
-
-            }
-            DockablePaneId sm_UserDockablePaneId = new DockablePaneId(retval);
-            DockablePane pane = uiApp.GetDockablePane(sm_UserDockablePaneId);
-            pane.Show(); 
+            UI.DrawFloorPlan drawfloorplan = new UI.DrawFloorPlan();
+            drawfloorplan.Show();
+            return Result.Succeeded;
+        }
+    }
+    
+    [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
+    [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
+    public class ImportFloorPlan : IExternalCommand
+    {
+        UIApplication uiApp;
+        Document m_Doc;
+        public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
+            ElementSet elements)
+        {
+            UIApplication uiApp = commandData.Application;
+            UIEntityApp.myApp = uiApp;
+            UIEntityApp.ElementSet = elements;
+            UIEntityApp.commandData = commandData;
+            UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
+            Autodesk.Revit.ApplicationServices.Application app = uiApp.Application;
+            m_Doc = uiApp.ActiveUIDocument.Document;
+            uiApp.OpenAndActivateDocument("D:/项目1.rvt");
+            return Result.Succeeded;
+        }
+    }
+    [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
+    [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
+    public class Collect : IExternalCommand
+    {
+        UIApplication uiApp;
+        Document m_Doc;
+        public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
+            ElementSet elements)
+        {
+            UIApplication uiApp = commandData.Application;
+            UIEntityApp.myApp = uiApp;
+            UIEntityApp.ElementSet = elements;
+            UIEntityApp.commandData = commandData;
+            UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
+            UI.FloorPlanCollect collect = new UI.FloorPlanCollect();
+            
             return Result.Succeeded;
         }
     }
@@ -173,11 +210,13 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
             ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
             string m_mainPageGuid = ConstGuid.ChooseSizeGuid;
 
             Guid retval = Guid.Empty;
@@ -204,41 +243,14 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
             ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
-            UIDocument uidocument = uiApp.ActiveUIDocument;
-            Document RevitDoc = uidocument.Document;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
             uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.ArchitecturalWall));
-
-            //Transaction trans = new Transaction(RevitDoc, "ExComm");
-            //trans.Start();
-            //FilteredElementCollector filteredelements = new FilteredElementCollector(RevitDoc);
-            //ElementClassFilter classfilter = new ElementClassFilter(typeof(Wall));
-            //filteredelements = filteredelements.WherePasses(classfilter);
-
-            //foreach (Wall wall in filteredelements)
-            //{
-
-            //    Parameter parameter1 = wall.get_Parameter(BuiltInParameter.WALL_USER_HEIGHT_PARAM);
-
-            //    CompoundStructure cs = wall.WallType.GetCompoundStructure();
-
-            //    IList<CompoundStructureLayer> listLayer = cs.GetLayers();
-            //    int iIdx = 0;
-            //    foreach (CompoundStructureLayer cLayer in listLayer)
-            //    {
-            //        if (MaterialFunctionAssignment.Structure == cLayer.Function)
-            //            break;
-            //        iIdx++;
-            //    }
-            //    cs.SetLayerWidth(iIdx, 1000.0*PaintData.DrawFloorPlanData.wallThickness / 304.8);
-            //    wall.WallType.SetCompoundStructure(cs);
-            //    bool success = parameter1.Set(PaintData.DrawFloorPlanData.wallHeight * 1000.0 / 304.8);
-            //}
-            //trans.Commit();
             return Result.Succeeded;
         }
     }    
@@ -252,16 +264,16 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
             ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
-            UIDocument uidocument = uiApp.ActiveUIDocument;
-            Document RevitDoc = uidocument.Document;
-            Transaction trans = new Transaction(RevitDoc, "ExComm");
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
+            Transaction trans = new Transaction(UIEntityApp.document, "ExComm");
             trans.Start();
-            FilteredElementCollector filteredelements = new FilteredElementCollector(RevitDoc);
+            FilteredElementCollector filteredelements = new FilteredElementCollector(UIEntityApp.document);
             ElementClassFilter classfilter = new ElementClassFilter(typeof(Wall));
             filteredelements = filteredelements.WherePasses(classfilter);
 
@@ -297,11 +309,13 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
             ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
             uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.Door));
             return Result.Succeeded;
         }
@@ -316,11 +330,13 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
             ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
             string m_mainPageGuid = ConstGuid.ChooseDoorSizeGuid;
 
             Guid retval = Guid.Empty;
@@ -348,17 +364,17 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
             ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
-            UIDocument uidocument = uiApp.ActiveUIDocument;
-            Document RevitDoc = uidocument.Document;
-            Transaction trans = new Transaction(RevitDoc, "ExComm");
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
+            Transaction trans = new Transaction(UIEntityApp.document, "ExComm");
             trans.Start();
 
-            FilteredElementCollector filteredelements = new FilteredElementCollector(RevitDoc);
+            FilteredElementCollector filteredelements = new FilteredElementCollector(UIEntityApp.document);
             ElementClassFilter classFilter = new ElementClassFilter(typeof(FamilyInstance));
             ElementCategoryFilter catFilter = new ElementCategoryFilter(BuiltInCategory.OST_Doors);            
             LogicalAndFilter logicalFilter = new LogicalAndFilter(classFilter, catFilter);
@@ -386,11 +402,13 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
             ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
             uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.Window));
             return Result.Succeeded;
         }
@@ -404,11 +422,13 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
             ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
             uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.ArchitecturalColumn));
             return Result.Succeeded;
         }
@@ -422,30 +442,34 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
             ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
             uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.PlaceAComponent));
             return Result.Succeeded;
         }
     }
     [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
     [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
-    public class ThreeDPreview : IExternalCommand
+    public class ImportRevit : IExternalCommand
     {
         UIApplication uiApp;
         Document m_Doc;
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
             ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
-            uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.Default3DView));
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
+            uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.OpenRevitFile));
             return Result.Succeeded;
         }
     }
@@ -458,11 +482,13 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
             ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
          //   uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.));
             return Result.Succeeded;
         }
@@ -476,11 +502,13 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
             ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
             uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.ImportCAD));
             return Result.Succeeded;
         }
@@ -495,46 +523,185 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
           ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
-            uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.Area));
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
+            uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.Room));
+
             return Result.Succeeded;
         }
     }
-    [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
+      [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
     [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
-    public class Pave : IExternalCommand
+    public class SplitLine : IExternalCommand
     {
         UIApplication uiApp;
         Document m_Doc;
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
           ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
-            m_Doc = uiApp.ActiveUIDocument.Document;
-
-            string m_mainPageGuid = ConstGuid.PaveGuid;
-
-            Guid retval = Guid.Empty;
-            try
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
+            uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.RoomSeparator));
+            return Result.Succeeded;
+        }
+    }
+    
+    [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
+    [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
+    public class Pave : IExternalCommand
+    {
+        bool m_roofCreated;
+      
+        public bool RoofCreated
+        {
+            get
             {
-                retval = new Guid(m_mainPageGuid);
+                return m_roofCreated;
             }
-            catch (Exception)
+            set
             {
+                m_roofCreated = value;
+            }
+        }
+        public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
+           ElementSet elements)
+        {
+            UIApplication uiApp = commandData.Application;
+            UIEntityApp.myApp = uiApp;
+            UIEntityApp.ElementSet = elements;
+            UIEntityApp.commandData = commandData;
+            UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
+            UIDocument uidoc = commandData.Application.ActiveUIDocument;
+            Document document = commandData.Application.ActiveUIDocument.Document;
+            UIApplication app = commandData.Application;
+            m_roofCreated = false;
+            UI.Pave.PaveDocument pDoc = new UI.Pave.PaveDocument(commandData);
+            using (UI.Pave.PaveForm paveForm = new UI.Pave.PaveForm(pDoc))
+            {
+                if (null != paveForm && false == paveForm.IsDisposed)
+                {
+                    paveForm.ShowDialog();
+                }
             }
 
-            DockablePaneId sm_UserDockablePaneId = new DockablePaneId(retval);
-            DockablePane pane = uiApp.GetDockablePane(sm_UserDockablePaneId);
-            pane.Show();
+            return Result.Succeeded;
+        }
+    }
+    [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
+    [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
+    public class Pave1 : IExternalCommand
+    {
+        bool m_roofCreated;
 
+        public bool RoofCreated
+        {
+            get
+            {
+                return m_roofCreated;
+            }
+            set
+            {
+                m_roofCreated = value;
+            }
+        }
+        public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
+           ElementSet elements)
+        {
+            UIApplication uiApp = commandData.Application;
+            UIEntityApp.myApp = uiApp;
+            UIEntityApp.ElementSet = elements;
+            UIEntityApp.commandData = commandData;
+            UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
+            UIDocument uidoc = commandData.Application.ActiveUIDocument;
+            Document document = commandData.Application.ActiveUIDocument.Document;
+            UIApplication app = commandData.Application;
+            m_roofCreated = false;
+            UI.Pave.PaveDocument pDoc = new UI.Pave.PaveDocument(commandData);
+            //using (UI.Pave.PaveForm paveForm = new UI.Pave.PaveForm(pDoc))
+            //{
+            //    if (null != paveForm && false == paveForm.IsDisposed)
+            //    {
+            //        paveForm.ShowDialog();
+            //    }
+            //}
+            Transaction open_family = new Transaction(document, Guid.NewGuid().GetHashCode().ToString());
+            open_family.Start();
+            document.LoadFamily(@"C:\ProgramData\Autodesk\RVT 2015\Libraries\China\建筑\按填充图案划分的幕墙嵌板\矩形表面.rfa");
+            open_family.Commit();
+
+            //using (PaveForm paveForm = new PaveForm(pDoc))
+            //{
+            //    if (null != paveForm && false == paveForm.IsDisposed)
+            //    {
+            //        paveForm.ShowDialog();
+            //    }
+            //}
+            Transaction act = new Transaction(document, Guid.NewGuid().GetHashCode().ToString());
+            act.Start();
+            FamilySymbol familySymbol = null;
+            FilteredElementCollector collector = new FilteredElementCollector(document);//过滤元素
+            ICollection<Element> collection = collector.OfClass(typeof(FamilySymbol)).ToElements();
+            foreach (Element e in collection)
+            {
+                familySymbol = e as FamilySymbol;
+                if (null != familySymbol.Category)
+                {
+
+                    //遍历族符号的方法
+                    FamilySymbolSetIterator symbolItor = familySymbol.Family.Symbols.ForwardIterator();
+                    FamilySymbol fs = null;
+                    while (symbolItor.MoveNext())
+                    {
+                        fs = symbolItor.Current as FamilySymbol;
+                    }
+                }
+            }
+            double length = 3.93700787401575;
+            for (int i = 0; i < 10; i++)
+            {
+                for (int y = 0; y < 10; y++)
+                {
+                    XYZ point = new XYZ(-10 + y * length, 0 - i * length, 0);
+                    FamilyInstance fi = document.Create.NewFamilyInstance(point, familySymbol, Autodesk.Revit.DB.Structure.StructuralType.NonStructural);
+
+                }
+            }
+
+            act.Commit();
+            return Result.Succeeded;
+        }
+    }   
+    [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
+    [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
+    public class ThreeDPreview : IExternalCommand
+    {
+        UIApplication uiApp;
+        Document m_Doc;
+        public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
+          ElementSet elements)
+        {
+            UIApplication uiApp = commandData.Application;
+            UIEntityApp.myApp = uiApp;
+            UIEntityApp.ElementSet = elements;
+            UIEntityApp.commandData = commandData;
+            UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
+            uiApp.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.Default3DView));
             return Result.Succeeded;
         }
     }
@@ -547,11 +714,13 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
           ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
             Autodesk.Revit.ApplicationServices.Application app = uiApp.Application;
             m_Doc = uiApp.ActiveUIDocument.Document;
 
@@ -569,11 +738,13 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
           ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
             UI.FloorPlanManage floorplanmanage = new UI.FloorPlanManage();
             floorplanmanage.Show();
             return Result.Succeeded;
@@ -588,11 +759,13 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
           ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
             UI.PaveModelManage pavemodelmanage = new UI.PaveModelManage();
             pavemodelmanage.Show();
             return Result.Succeeded;
@@ -607,11 +780,13 @@ namespace RevitRedevelop
         public Autodesk.Revit.UI.Result Execute(ExternalCommandData commandData, ref string message,
           ElementSet elements)
         {
-            uiApp = commandData.Application;
+            UIApplication uiApp = commandData.Application;
             UIEntityApp.myApp = uiApp;
             UIEntityApp.ElementSet = elements;
             UIEntityApp.commandData = commandData;
             UIEntityApp.message = message;
+            UIEntityApp.uidoc = commandData.Application.ActiveUIDocument;
+            UIEntityApp.document = commandData.Application.ActiveUIDocument.Document;
             UI.TileProductManage tileproductmanage = new UI.TileProductManage();
             tileproductmanage.Show();
             return Result.Succeeded;

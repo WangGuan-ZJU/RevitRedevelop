@@ -40,89 +40,95 @@ namespace RevitRedevelop
         RibbonPanel rp3;
         RibbonPanel rp4;
         //按钮
-        PushButtonData pbd1;
-        PushButton pb1;
-        PushButtonData pbd2;
-        PushButton pb2;
-        PushButtonData pbd3;
-        PushButton pb3;
-        PushButtonData pbd4;
-        PushButton pb4;
-        PushButtonData pbd5_1;
-        PushButton pb5_1;
-        PushButtonData pbd5_2;
-        PushButton pb5_2;
-        PushButtonData pbd5_3;
-        PushButton pb5_3;
-        PushButtonData pbd5_4;
-        PushButton pb5_4;
-        PushButtonData pbd5_4_1;
-        PushButton pb5_4_1;
-        PushButtonData pbd5_4_2;
-        PushButton pb5_4_2;
-        PushButtonData pbd5_5;
-        PushButton pb5_5;
-        PushButtonData pbd5_5_1;
-        PushButton pb5_5_1;
-        PushButtonData pbd5_5_2;
-        PushButton pb5_5_2;
-        PushButtonData pbd5_6;
-        PushButton pb5_6;
-        PushButtonData pbd5_6_1;
-        PushButton pb5_6_1;
-        PushButtonData pbd5_6_2;
-        PushButton pb5_6_2;
-        PushButtonData pbd5_7;
-        PushButton pb5_7;
-        PushButtonData pbd5_7_1;
-        PushButton pb5_7_1;
-        PushButtonData pbd5_7_2;
-        PushButton pb5_7_2;
-        PushButtonData pbd5_8;
-        PushButton pb5_8;
-        PushButtonData pbd5_8_1;
-        PushButton pb5_8_1;
-        PushButtonData pbd5_8_2;
-        PushButton pb5_8_2; 
-        PushButtonData pbd5_9;
-        PushButton pb5_9;
-        PushButtonData pbd5_10;
-        PushButton pb5_10;
-        PushButtonData pbd5_11;
-        PushButton pb5_11;
-        PushButtonData pbd5_12;
-        PushButton pb5_12;
-        PushButtonData pbd5_13;
-        PushButton pb5_13;    
-        PushButtonData pbd6_1;
-        PushButton pb6_1;
-        PushButtonData pbd6_1_1;
-        PushButton pb6_1_1;
-        PushButtonData pbd6_1_2;
-        PushButton pb6_1_2;
-        PushButtonData pbd6_2;
-        PushButton pb6_2;
-        PushButtonData pbd6_3;
-        PushButton pb6_3;
-        PushButtonData pbd7;
-        PushButton pb7;
-        PushButtonData pbd8;
-        PushButton pb8;
-        PushButtonData pbd9;
-        PushButton pb9;
-        PushButtonData pbd10;
-        PushButton pb10;
-        PushButtonData pbd11;
-        PushButton pb11;
-        PushButtonData pbd12;
-        PushButton pb12;
+        PushButtonData pbdWelcome;
+        PushButton pbWelcome;
+        PushButtonData pbdLogin;
+        PushButton pbLogin;
+        PushButtonData pbdRegister;
+        PushButton pbRegister;
+        PushButtonData pbdLogout;
+        PushButton pbLogout;
+        PushButtonData pbdChooseFloorPlan;
+        PushButton pbChooseFloorPlan;
+        PushButtonData pbdEnsureFloorPlan;
+        PushButton pbEnsureFloorPlan;
+        PushButtonData pbdFloorPlan;
+        PushButton pbFloorPlan;
+        PushButtonData pbdChooseSize;
+        PushButton pbChooseSize;
+        PushButtonData pbdWall;
+        PushButton pbWall;
+        PushButtonData pbdGenerateWall;
+        PushButton pbGenerateWall;
+        PushButtonData pbdDoor;
+        PushButton pbDoor;
+        PushButtonData pbdChooseDoorSize;
+        PushButton pbChooseDoorSize;
+        PushButtonData pbdGenerateDoor;
+        PushButton pbGenerateDoor;
+        PushButtonData pbdDrawWindow;
+        PushButton pbDrawWindow;
+        PushButtonData pbdChooseWindowSize;
+        PushButton pbChooseWindowSize;
+        PushButtonData pbdGenerateWindow;
+        PushButton pbGenerateWindow;
+        PushButtonData pbdDrawPillar;
+        PushButton pbDrawPillar;
+        PushButtonData pbdChoosePillarSize;
+        PushButton pbChoosePillarSize;
+        PushButtonData pbdGeneratePillar;
+        PushButton pbGeneratePillar;
+        PushButtonData pbdChooseFurniture;
+        PushButton pbChooseFurniture;
+        PushButtonData pbdFurnitureLocation;
+        PushButton pbFurnitureLocation;
+        PushButtonData pbdImportRevit;
+        PushButton pbImportRevit;
+        PushButtonData pbdImportDwg;
+        PushButton pbImportDwg;
+        PushButtonData pbdCollectFloorPlan;
+        PushButton pbCollectFloorPlan;
+        PushButtonData pbdAreaPartition;
+        PushButton pbAreaPartition;
+        PushButtonData pbdDoorStone;
+        PushButton pbDoorStone;
+        PushButtonData pbdSplitLine;
+        PushButton pbSplitLine;
+        PushButtonData pbdPave;
+        PushButton pbPave;
+        PushButtonData pbdResultExport;
+        PushButton pbResultExport;
+        PushButtonData pbd3DPreview;
+        PushButton pb3DPreview;
+        PushButtonData pbdFloorPlanManage;
+        PushButton pbFloorPlanManage;
+        PushButtonData pbdPaveModelManage;
+        PushButton pbPaveModelManage;
+        PushButtonData pbdTileProductManage;
+        PushButton pbTileProductManage;
+        PushButtonData pbdOnlineLearning;
+        PushButton pbOnlineLearning;
+        PushButtonData pbdOnlineHelp;
+        PushButton pbOnlineHelp;
+        PulldownButtonData pudbdWall;
+        PulldownButtonData pudbdDoor;
+        PulldownButtonData pudbdWindow;
+        PulldownButtonData pudbdPillar;
+        PulldownButtonData pudbdFurniture;
+        PulldownButtonData pudbdAreaSplit;
+        PulldownButton pudbWall;
+        PulldownButton pudbDoor;
+        PulldownButton pudbWindow;
+        PulldownButton pudbPillar;
+        PulldownButton pudbFurniture;
+        PulldownButton pudbAreaSplit;
         #endregion
         public Autodesk.Revit.UI.Result OnStartup(UIControlledApplication application)
         {
             try
             {
                 CreateRibbonSamplePanel(application);
-                //InitializeRibbon();
+                InitializeRibbon();
                 RegisterDockableSamplePane(application);
                 return Autodesk.Revit.UI.Result.Succeeded;
             }
@@ -156,177 +162,178 @@ namespace RevitRedevelop
             rp3 = application.CreateRibbonPanel("砖+宝", "基本信息管理");
             rp4 = application.CreateRibbonPanel("砖+宝", "快速入门");
 
-            String userInfoShow = "\nAdministrator，您好！\n testtsetsetsetset!";
-            pbd1 = new PushButtonData("userInfoShow", userInfoShow, AddInPath, "userInfoShow");
-            pb1 = rp1.AddItem(pbd1) as PushButton;
-            pb1.Enabled = false;
+            String userInfoShow = "\n您好！\n          请登录!         ";
+            pbdWelcome = new PushButtonData("userInfoShow", userInfoShow, AddInPath, "userInfoShow");
+            pbWelcome = rp1.AddItem(pbdWelcome) as PushButton;
+            pbWelcome.Enabled = false;
 
             //pbd1.AvailabilityClassName = "RevitRedevelop.AvailabilityControll";
 
-            pbd2 = new PushButtonData("UserInfo", "个人信息", AddInPath, "RevitRedevelop.UserInfoDockablePane");
-            pb2 = rp1.AddItem(pbd2) as PushButton;
-            pb2.ToolTip = "查看个人信息";
-            pb2.LongDescription = "查看个人信息";
-            pb2.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdLogin = new PushButtonData("UserInfo", "个人信息", AddInPath, "RevitRedevelop.UserInfoDockablePane");
+            pbLogin = rp1.AddItem(pbdLogin) as PushButton;
+            pbLogin.ToolTip = "查看个人信息";
+            pbLogin.LongDescription = "查看个人信息";
+            pbLogin.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd3 = new PushButtonData("PackagePurchase", "套餐购买", AddInPath, "RevitRedevelop.PackagePurchaseDockablePane");
-            pb3 = rp1.AddItem(pbd3) as PushButton;
-            pb3.ToolTip = "进行套餐的浏览和购买";
-            pb3.LongDescription = "进行套餐的浏览和购买";
-            pb3.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdRegister = new PushButtonData("PackagePurchase", "套餐购买", AddInPath, "RevitRedevelop.PackagePurchaseDockablePane");
+            pbRegister = rp1.AddItem(pbdRegister) as PushButton;
+            pbRegister.ToolTip = "进行套餐的浏览和购买";
+            pbRegister.LongDescription = "进行套餐的浏览和购买";
+            pbRegister.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd4 = new PushButtonData("LogOut", "退出登录", AddInPath, "RevitRedevelop.LogOut");
-            pb4 = rp1.AddItem(pbd4) as PushButton;
-            pb4.ToolTip = "退出当前登录";
-            pb4.LongDescription = "退出当前登录";
-            pb4.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdLogout = new PushButtonData("LogOut", "退出登录", AddInPath, "RevitRedevelop.LogOut");
+            pbLogout = rp1.AddItem(pbdLogout) as PushButton;
+            pbLogout.ToolTip = "退出当前登录";
+            pbLogout.LongDescription = "退出当前登录";
+            pbLogout.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-          
-            pbd5_1 = new PushButtonData("ChooseFloorPlan", "选择户型图", AddInPath, "RevitRedevelop.DrawFloorPlanDockablePane");
-            pb5_1 = rp2_1.AddItem(pbd5_1) as PushButton;
-            pb5_1.ToolTip = "进行户型图的选择";
-            pb5_1.LongDescription = "进行户型图的选择";
-            pb5_1.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
-            pbd5_2 = new PushButtonData("EnsureFloorPlan", "确认户型图", AddInPath, "LogOut");
-            pb5_2 = rp2_1.AddItem(pbd5_2) as PushButton;
-            pb5_2.ToolTip = "确认选择的户型图";
-            pb5_2.LongDescription = "进行户型图的选择";
-            pb5_2.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+
+            pbdChooseFloorPlan = new PushButtonData("ChooseFloorPlan", "选择户型图", AddInPath, "RevitRedevelop.DrawFloorPlanDockablePane");
+            pbChooseFloorPlan = rp2_1.AddItem(pbdChooseFloorPlan) as PushButton;
+            pbChooseFloorPlan.ToolTip = "进行户型图的选择";
+            pbChooseFloorPlan.LongDescription = "进行户型图的选择";
+            pbChooseFloorPlan.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            //pbdEnsureFloorPlan = new PushButtonData("EnsureFloorPlan", "户型图读入", AddInPath, "RevitRedevelop.ImportFloorPlan");
+            //pbEnsureFloorPlan = rp2_1.AddItem(pbdEnsureFloorPlan) as PushButton;
+            //pbEnsureFloorPlan.ToolTip = "确认选择的户型图";
+            //pbEnsureFloorPlan.LongDescription = "进行户型图的选择";
+            //pbEnsureFloorPlan.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
            
             rp2_1.AddSeparator();
 
-            pbd5_3= new PushButtonData("FloorPlan", "\n手动绘制\n户型图", AddInPath,"LogOut");
-            pb5_3 = rp2_1.AddItem(pbd5_3) as PushButton;
-            pb5_3.Enabled = false;
+            pbdFloorPlan = new PushButtonData("FloorPlan", "\n手动绘制\n户型图", AddInPath, "LogOut");
+            pbFloorPlan = rp2_1.AddItem(pbdFloorPlan) as PushButton;
+            pbFloorPlan.Enabled = false;
             //SplitButtonData spbd = new SplitButtonData("NewWallSplit", "创建墙");
             //SplitButton spb = rp2_1.AddItem(spbd) as SplitButton;
 
-            PulldownButtonData pudbd = new PulldownButtonData("WallPull", "墙体");
-            PulldownButton pudb = rp2_1.AddItem(pudbd) as PulldownButton;
-            pudb.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pudbdWall = new PulldownButtonData("WallPull", "墙体");
+            pudbWall = rp2_1.AddItem(pudbdWall) as PulldownButton;
+            pudbWall.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd5_4_1 = new PushButtonData("Wall", "绘制墙的轮廓", AddInPath, "RevitRedevelop.DrawWall");
-            pb5_4_1 = pudb.AddPushButton(pbd5_4_1);
-            pb5_4_1.ToolTip = "绘制墙的轮廓";
-            pb5_4_1.LongDescription = "绘制墙的轮廓";
-            pb5_4_1.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdWall = new PushButtonData("Wall", "绘制墙的轮廓", AddInPath, "RevitRedevelop.DrawWall");
+            pbWall = pudbWall.AddPushButton(pbdWall);
+            pbWall.ToolTip = "绘制墙的轮廓";
+            pbWall.LongDescription = "绘制墙的轮廓";
+            pbWall.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd5_4 = new PushButtonData("ChooseSize", "选择墙的尺寸", AddInPath, "RevitRedevelop.ChooseSize");
-            pb5_4 = pudb.AddPushButton(pbd5_4);
-            pb5_4.ToolTip = "选择墙的尺寸";
-            pb5_4.LongDescription = "选择墙的尺寸";
-            pb5_4.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdChooseSize = new PushButtonData("ChooseSize", "选择墙的尺寸", AddInPath, "RevitRedevelop.ChooseSize");
+            pbChooseSize = pudbWall.AddPushButton(pbdChooseSize);
+            pbChooseSize.ToolTip = "选择墙的尺寸";
+            pbChooseSize.LongDescription = "选择墙的尺寸";
+            pbChooseSize.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd5_4_2 = new PushButtonData("GenerateWall", "生成墙体", AddInPath, "RevitRedevelop.GenerateWall");
-            pb5_4_2 = pudb.AddPushButton(pbd5_4_2);
-            pb5_4_2.ToolTip = "生成墙体";
-            pb5_4_2.LongDescription = "生成墙体";
-            pb5_4_2.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdGenerateWall = new PushButtonData("GenerateWall", "生成墙体", AddInPath, "RevitRedevelop.GenerateWall");
+            pbGenerateWall = pudbWall.AddPushButton(pbdGenerateWall);
+            pbGenerateWall.ToolTip = "生成墙体";
+            pbGenerateWall.LongDescription = "生成墙体";
+            pbGenerateWall.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
 
-            PulldownButtonData pudbd2 = new PulldownButtonData("DoorPull", "门");
-            PulldownButton pudb2 = rp2_1.AddItem(pudbd2) as PulldownButton;
-            pudb2.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pudbdDoor = new PulldownButtonData("DoorPull", "门");
+            pudbDoor = rp2_1.AddItem(pudbdDoor) as PulldownButton;
+            pudbDoor.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd5_5 = new PushButtonData("Door", "绘制门位置", AddInPath, "RevitRedevelop.DrawDoor");
-            pb5_5 = pudb2.AddPushButton(pbd5_5);
-            pb5_5.ToolTip = "绘制门位置";
-            pb5_5.LongDescription = "绘制门位置";
-            pb5_5.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdDoor = new PushButtonData("Door", "绘制门位置", AddInPath, "RevitRedevelop.DrawDoor");
+            pbDoor = pudbDoor.AddPushButton(pbdDoor);
+            pbDoor.ToolTip = "绘制门位置";
+            pbDoor.LongDescription = "绘制门位置";
+            pbDoor.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd5_5_1 = new PushButtonData("ChooseDoorSize", "选择门尺寸", AddInPath, "RevitRedevelop.ChooseDoorSize");
-            pb5_5_1 = pudb2.AddPushButton(pbd5_5_1);
-            pb5_5_1.ToolTip = "选择门尺寸";
-            pb5_5_1.LongDescription = "选择门尺寸";
-            pb5_5_1.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdChooseDoorSize = new PushButtonData("ChooseDoorSize", "选择门尺寸", AddInPath, "RevitRedevelop.ChooseDoorSize");
+            pbChooseDoorSize = pudbDoor.AddPushButton(pbdChooseDoorSize);
+            pbChooseDoorSize.ToolTip = "选择门尺寸";
+            pbChooseDoorSize.LongDescription = "选择门尺寸";
+            pbChooseDoorSize.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd5_5_2 = new PushButtonData("GenerateDoor", "生成门", AddInPath, "RevitRedevelop.GenerateDoor");
-            pb5_5_2 = pudb2.AddPushButton(pbd5_5_2);
-            pb5_5_2.ToolTip = "生成门";
-            pb5_5_2.LongDescription = "生成门";
-            pb5_5_2.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdGenerateDoor = new PushButtonData("GenerateDoor", "生成门", AddInPath, "RevitRedevelop.GenerateDoor");
+            pbGenerateDoor = pudbDoor.AddPushButton(pbdGenerateDoor);
+            pbGenerateDoor.ToolTip = "生成门";
+            pbGenerateDoor.LongDescription = "生成门";
+            pbGenerateDoor.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            PulldownButtonData pudbd3 = new PulldownButtonData("WindowPull", "窗");
-            PulldownButton pudb3 = rp2_1.AddItem(pudbd3) as PulldownButton;
-            pudb3.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pudbdWindow = new PulldownButtonData("WindowPull", "窗");
+            pudbWindow = rp2_1.AddItem(pudbdWindow) as PulldownButton;
+            pudbWindow.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd5_6 = new PushButtonData("DrawWindow", "窗", AddInPath, "RevitRedevelop.DrawWindow");
-            pb5_6 = pudb3.AddPushButton(pbd5_6);
-            pb5_6.ToolTip = "绘制窗";
-            pb5_6.LongDescription = "绘制窗";
-            pb5_6.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdDrawWindow = new PushButtonData("DrawWindow", "窗", AddInPath, "RevitRedevelop.DrawWindow");
+            pbDrawWindow = pudbWindow.AddPushButton(pbdDrawWindow);
+            pbDrawWindow.ToolTip = "绘制窗";
+            pbDrawWindow.LongDescription = "绘制窗";
+            pbDrawWindow.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd5_6_1 = new PushButtonData("ChooseWindowSize", "选择窗户大小", AddInPath, "RevitRedevelop.ChooseWindowSize");
-            pb5_6_1 = pudb3.AddPushButton(pbd5_6_1);
-            pb5_6_1.ToolTip = "选择窗户大小";
-            pb5_6_1.LongDescription = "选择窗户大小";
-            pb5_6_1.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdChooseWindowSize = new PushButtonData("ChooseWindowSize", "选择窗户大小", AddInPath, "RevitRedevelop.ChooseWindowSize");
+            pbChooseWindowSize = pudbWindow.AddPushButton(pbdChooseWindowSize);
+            pbChooseWindowSize.ToolTip = "选择窗户大小";
+            pbChooseWindowSize.LongDescription = "选择窗户大小";
+            pbChooseWindowSize.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd5_6_2 = new PushButtonData("GenerateWindow", "生成窗户", AddInPath, "RevitRedevelop.GenerateWindow");
-            pb5_6_2 = pudb3.AddPushButton(pbd5_6_2);
-            pb5_6_2.ToolTip = "生成窗户";
-            pb5_6_2.LongDescription = "生成窗户";
-            pb5_6_2.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdGenerateWindow = new PushButtonData("GenerateWindow", "生成窗户", AddInPath, "RevitRedevelop.GenerateWindow");
+            pbGenerateWindow = pudbWindow.AddPushButton(pbdGenerateWindow);
+            pbGenerateWindow.ToolTip = "生成窗户";
+            pbGenerateWindow.LongDescription = "生成窗户";
+            pbGenerateWindow.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            PulldownButtonData pudbd4 = new PulldownButtonData("PillarPull", "柱子");
-            PulldownButton pudb4 = rp2_1.AddItem(pudbd4) as PulldownButton;
-            pudb4.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pudbdPillar = new PulldownButtonData("PillarPull", "柱子");
+            pudbPillar = rp2_1.AddItem(pudbdPillar) as PulldownButton;
+            pudbPillar.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd5_7 = new PushButtonData("DrawPillar", "放置柱子", AddInPath, "RevitRedevelop.DrawColumn");
-            pb5_7 = pudb4.AddPushButton(pbd5_7);
-            pb5_7.ToolTip = "放置柱子";
-            pb5_7.LongDescription = "放置柱子";
-            pb5_7.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdDrawPillar = new PushButtonData("DrawPillar", "放置柱子", AddInPath, "RevitRedevelop.DrawColumn");
+            pbDrawPillar = pudbPillar.AddPushButton(pbdDrawPillar);
+            pbDrawPillar.ToolTip = "放置柱子";
+            pbDrawPillar.LongDescription = "放置柱子";
+            pbDrawPillar.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd5_7_1 = new PushButtonData("ChoosePillarSize", "选择柱子尺寸", AddInPath, "RevitRedevelop.ChoosePillarSize");
-            pb5_7_1 = pudb4.AddPushButton(pbd5_7_1);
-            pb5_7_1.ToolTip = "选择柱子尺寸";
-            pb5_7_1.LongDescription = "选择柱子尺寸";
-            pb5_7_1.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdChoosePillarSize = new PushButtonData("ChoosePillarSize", "选择柱子尺寸", AddInPath, "RevitRedevelop.ChoosePillarSize");
+            pbChoosePillarSize = pudbPillar.AddPushButton(pbdChoosePillarSize);
+            pbChoosePillarSize.ToolTip = "选择柱子尺寸";
+            pbChoosePillarSize.LongDescription = "选择柱子尺寸";
+            pbChoosePillarSize.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd5_7_2 = new PushButtonData("GeneratePillar", "生成柱子", AddInPath, "RevitRedevelop.GeneratePillar");
-            pb5_7_2 = pudb4.AddPushButton(pbd5_7_2);
-            pb5_7_2.ToolTip = "生成柱子";
-            pb5_7_2.LongDescription = "生成柱子";
-            pb5_7_2.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdGeneratePillar = new PushButtonData("GeneratePillar", "生成柱子", AddInPath, "RevitRedevelop.GeneratePillar");
+            pbGeneratePillar = pudbPillar.AddPushButton(pbdGeneratePillar);
+            pbGeneratePillar.ToolTip = "生成柱子";
+            pbGeneratePillar.LongDescription = "生成柱子";
+            pbGeneratePillar.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            PulldownButtonData pudbd5 = new PulldownButtonData("Furniture", "放置构件");
-            PulldownButton pudb5 = rp2_1.AddItem(pudbd5) as PulldownButton;
-            pudb5.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pudbdFurniture = new PulldownButtonData("Furniture", "放置构件");
+            pudbFurniture = rp2_1.AddItem(pudbdFurniture) as PulldownButton;
+            pudbFurniture.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd5_8 = new PushButtonData("Furniture", "选择构件", AddInPath, "RevitRedevelop.ChooseFurniture");
-            pb5_8 = pudb5.AddPushButton(pbd5_8);
-            pb5_8.ToolTip = "选择构件";
-            pb5_8.LongDescription = "选择构件";
-            pb5_8.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdChooseFurniture = new PushButtonData("ChooseFurniture", "选择构件", AddInPath, "RevitRedevelop.ChooseFurniture");
+            pbChooseFurniture = pudbFurniture.AddPushButton(pbdChooseFurniture);
+            pbChooseFurniture.ToolTip = "选择构件";
+            pbChooseFurniture.LongDescription = "选择构件";
+            pbChooseFurniture.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd5_8_1 = new PushButtonData("FurnitureLocation", "选择构件位置", AddInPath, "RevitRedevelop.ChooseFurniture");
-            pb5_8_1 = pudb5.AddPushButton(pbd5_8_1);
-            pb5_8_1.ToolTip = "选择构件位置";
-            pb5_8_1.LongDescription = "选择构件位置";
-            pb5_8_1.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdFurnitureLocation = new PushButtonData("FurnitureLocation", "选择构件位置", AddInPath, "RevitRedevelop.ChooseFurniture");
+            pbFurnitureLocation = pudbFurniture.AddPushButton(pbdFurnitureLocation);
+            pbFurnitureLocation.ToolTip = "选择构件位置";
+            pbFurnitureLocation.LongDescription = "选择构件位置";
+            pbFurnitureLocation.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
             rp2_1.AddSeparator();
 
-            pbd5_11 = new PushButtonData("3DPreview", "三维图", AddInPath, "RevitRedevelop.ThreeDPreview");
-            pbd5_13 = new PushButtonData("ImportDwg", "导入DWG图纸", AddInPath, "RevitRedevelop.ImportCAD");
-            IList<RibbonItem> ribbonItems = rp2_1.AddStackedItems(pbd5_11, pbd5_13);
-            pb5_11 = ribbonItems[0] as PushButton;          
-            pb5_13 = ribbonItems[1] as PushButton;
-            pb5_11.ToolTip = "三维图预览";
-            pb5_11.LongDescription = "三维图预览";
-            pb5_11.Image = GetBitmapImage("F:/StrcturalWall.png");
-            pb5_13.ToolTip = "导入DWG图纸";
-            pb5_13.LongDescription = "导入DWG图纸";
-            pb5_13.Image = GetBitmapImage("F:/StrcturalWall.png");
+            pbdImportRevit = new PushButtonData("ImportRevit", "导入Revit文件", AddInPath, "RevitRedevelop.ImportRevit");
+            pbdImportDwg = new PushButtonData("ImportDwg", "导入DWG图纸", AddInPath, "RevitRedevelop.ImportCAD");
+            IList<RibbonItem> ribbonItems = rp2_1.AddStackedItems(pbdImportRevit, pbdImportDwg);
+            pbImportRevit = ribbonItems[0] as PushButton;
+            pbImportDwg = ribbonItems[1] as PushButton;
+            pbImportRevit.ToolTip = "导入Revit文件";
+            pbImportRevit.LongDescription = "导入Revit文件";
+            pbImportRevit.Image = GetBitmapImage("F:/StrcturalWall.png");
+            pbImportDwg.ToolTip = "导入DWG图纸";
+            pbImportDwg.LongDescription = "导入DWG图纸";
+            pbImportDwg.Image = GetBitmapImage("F:/StrcturalWall.png");
 
             rp2_1.AddSlideOut();
 
-            PushButtonData pbd5_14 = new PushButtonData("DrawInfo1", "  信息显示  \n高(m):\n宽(m):", AddInPath,"asdasd");
-            PushButton pb5_14 = rp2_1.AddItem(pbd5_14) as PushButton;
-            pb5_14.ToolTip = "墙体信息显示";
-            pb5_14.LongDescription = "墙体信息显示";
-           
+            PushButtonData pbdDrawInfo1 = new PushButtonData("DrawInfo1", "  信息显示  \n高(m):\n宽(m):", AddInPath, "asdasd");
+            PushButton pbpbdDrawInfo1 = rp2_1.AddItem(pbdDrawInfo1) as PushButton;
+            pbpbdDrawInfo1.ToolTip = "墙体信息显示";
+            pbpbdDrawInfo1.LongDescription = "墙体信息显示";
+            pbpbdDrawInfo1.Enabled = false;
+
             TextBoxData txd1 = new TextBoxData("InfoShow1");
             TextBoxData txd2 = new TextBoxData("InfoShow2");
             
@@ -335,168 +342,146 @@ namespace RevitRedevelop
             TextBox txt2 = ribbonItems[1] as TextBox;
             txt1.Width = 100;
             txt2.Width = 100;
-            PushButtonData pbd5_15 = new PushButtonData("DrawInfo2", "\n\n长度(m):", AddInPath, "asdasdads");
-            PushButton pb5_15 = rp2_1.AddItem(pbd5_15) as PushButton;
-            pb5_15.ToolTip = "墙体信息显示";
-            pb5_15.LongDescription = "墙体信息显示";
+            PushButtonData pbdDrawInfo2 = new PushButtonData("DrawInfo2", "\n\n长度(m):", AddInPath, "asdasdads");
+            PushButton pbDrawInfo2 = rp2_1.AddItem(pbdDrawInfo2) as PushButton;
+            pbDrawInfo2.ToolTip = "墙体信息显示";
+            pbDrawInfo2.LongDescription = "墙体信息显示";
+            pbDrawInfo2.Enabled = false;
 
             TextBoxData txd3 = new TextBoxData("InfoShow3");
 
             TextBox txt3 = rp2_1.AddItem(txd3) as TextBox;
             txt3.Width = 100;
 
-            PulldownButtonData pudbd6 = new PulldownButtonData("AreaSplit", "区域划分");
-            PulldownButton pudb6 = rp2_2.AddItem(pudbd6) as PulldownButton;
+            pbdCollectFloorPlan = new PushButtonData("CollectFloorPlan","收藏户型图",AddInPath,"RevitRedevelop.Collect");
+            pbCollectFloorPlan = rp2_1.AddItem(pbdCollectFloorPlan) as PushButton;
+            pbCollectFloorPlan.ToolTip = "收藏户型图图纸";
+            pbCollectFloorPlan.LongDescription = "收藏户型图图纸";
+            pbCollectFloorPlan.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd6_1 = new PushButtonData("AreaPartition", "铺贴区域", AddInPath, "RevitRedevelop.AreaPartition");
-            pb6_1 = pudb6.AddPushButton(pbd6_1);
-            pb6_1.ToolTip = "铺贴区域";
-            pb6_1.LongDescription = "铺贴区域";
-            pb6_1.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pudbdAreaSplit = new PulldownButtonData("AreaSplit", "区域划分");
+            pudbAreaSplit = rp2_2.AddItem(pudbdAreaSplit) as PulldownButton;
+            pudbAreaSplit.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd6_1_1 = new PushButtonData("DoorStone", "门槛石", AddInPath, "RevitRedevelop.DoorStone");
-            pb6_1_1 = pudb6.AddPushButton(pbd6_1_1);
-            pb6_1_1.ToolTip = "门槛石";
-            pb6_1_1.LongDescription = "门槛石";
-            pb6_1_1.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdAreaPartition = new PushButtonData("AreaPartition", "铺贴区域", AddInPath, "RevitRedevelop.AreaPartition");
+            pbAreaPartition = pudbAreaSplit.AddPushButton(pbdAreaPartition);
+            pbAreaPartition.ToolTip = "铺贴区域";
+            pbAreaPartition.LongDescription = "铺贴区域";
+            pbAreaPartition.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd6_1_2 = new PushButtonData("SplitLine", "区域划分线", AddInPath, "RevitRedevelop.SplitLine");
-            pb6_1_2 = pudb6.AddPushButton(pbd6_1_2);
-            pb6_1_2.ToolTip = "区域划分线";
-            pb6_1_2.LongDescription = "区域划分线";
-            pb6_1_2.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdDoorStone = new PushButtonData("DoorStone", "门槛石", AddInPath, "RevitRedevelop.DoorStone");
+            pbDoorStone = pudbAreaSplit.AddPushButton(pbdDoorStone);
+            pbDoorStone.ToolTip = "门槛石";
+            pbDoorStone.LongDescription = "门槛石";
+            pbDoorStone.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            PulldownButtonData pudbd7 = new PulldownButtonData("ChooseModel", "模板选择");
-            PulldownButton pudb7 = rp2_2.AddItem(pudbd7) as PulldownButton;
+            pbdSplitLine = new PushButtonData("SplitLine", "区域划分线", AddInPath, "RevitRedevelop.SplitLine");
+            pbSplitLine = pudbAreaSplit.AddPushButton(pbdSplitLine);
+            pbSplitLine.ToolTip = "区域划分线";
+            pbSplitLine.LongDescription = "区域划分线";
+            pbSplitLine.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd6_2 = new PushButtonData("ChooseModel", "门槛石", AddInPath, "RevitRedevelop.ChooseModel");
-            pb6_2 = pudb6.AddPushButton(pbd2);
-            pb6_2.ToolTip = "门槛石";
-            pb6_2.LongDescription = "门槛石";
-            pb6_2.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdPave = new PushButtonData("Pave", "铺贴", AddInPath, "RevitRedevelop.Pave");
+            pbPave = rp2_2.AddItem(pbdPave) as PushButton;
+            pbPave.ToolTip = "铺贴";
+            pbPave.LongDescription = "铺贴";
+            pbPave.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd6_1_2 = new PushButtonData("SplitLine", "区域划分线", AddInPath, "RevitRedevelop.SplitLine");
-            pb6_1_2 = pudb6.AddPushButton(pbd6_1_2);
-            pb6_1_2.ToolTip = "区域划分线";
-            pb6_1_2.LongDescription = "区域划分线";
-            pb6_1_2.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            PushButtonData pbdPave1 = new PushButtonData("Pave1", "铺贴", AddInPath, "RevitRedevelop.Pave1");
+            PushButton pbPave1 = rp2_2.AddItem(pbdPave1) as PushButton;
+            pbPave1.ToolTip = "铺贴";
+            pbPave1.LongDescription = "铺贴";
+            pbPave1.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd7 = new PushButtonData("ResultExport", "      出图    ", AddInPath, "RevitRedevelop.ResultExport");
-            pb7 = rp2_3.AddItem(pbd7) as PushButton;
-            pb7.ToolTip = "See Selected Element";
-            pb7.LongDescription = "方案生成";
-            pb7.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbd3DPreview = new PushButtonData("3DPreview", "三维预览", AddInPath, "RevitRedevelop.ThreeDPreview");
+            pb3DPreview = rp2_3.AddItem(pbd3DPreview) as PushButton;
+            pb3DPreview.ToolTip = "三维预览";
+            pb3DPreview.LongDescription = "三维预览";
+            pb3DPreview.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd8 = new PushButtonData("FloorPlanManage", "户型图管理", AddInPath, "RevitRedevelop.FloorPlanManage");
-            pb8 = rp3.AddItem(pbd8) as PushButton;
-            pb8.ToolTip = "See Selected Element";
-            pb8.LongDescription = "户型图的管理";
-            pb8.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdResultExport = new PushButtonData("ResultExport", "      出图    ", AddInPath, "RevitRedevelop.ResultExport");
+            pbResultExport = rp2_3.AddItem(pbdResultExport) as PushButton;
+            pbResultExport.ToolTip = "See Selected Element";
+            pbResultExport.LongDescription = "方案生成";
+            pbResultExport.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd9 = new PushButtonData("PaveModelManage", " 模板管理", AddInPath, "RevitRedevelop.PaveModelManage");
-            pb9 = rp3.AddItem(pbd9) as PushButton;
-            pb9.ToolTip = "See Selected Element";
-            pb9.LongDescription = "铺砖模板管理";
-            pb9.LargeImage = new BitmapImage(new Uri("F:/StrcturalWall.png"));
+            pbdFloorPlanManage = new PushButtonData("FloorPlanManage", "户型图管理", AddInPath, "RevitRedevelop.FloorPlanManage");
+            pbFloorPlanManage = rp3.AddItem(pbdFloorPlanManage) as PushButton;
+            pbFloorPlanManage.ToolTip = "See Selected Element";
+            pbFloorPlanManage.LongDescription = "户型图的管理";
+            pbFloorPlanManage.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd10 = new PushButtonData("TileProductManage", " 单品管理", AddInPath, "RevitRedevelop.TileProductManage");
-            pb10 = rp3.AddItem(pbd10) as PushButton;
-            pb10.ToolTip = "See Selected Element";
-            pb10.LongDescription = "铺砖模板管理";
-            pb10.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdPaveModelManage = new PushButtonData("PaveModelManage", " 模板管理", AddInPath, "RevitRedevelop.PaveModelManage");
+            pbPaveModelManage = rp3.AddItem(pbdPaveModelManage) as PushButton;
+            pbPaveModelManage.ToolTip = "See Selected Element";
+            pbPaveModelManage.LongDescription = "铺砖模板管理";
+            pbPaveModelManage.LargeImage = new BitmapImage(new Uri("F:/StrcturalWall.png"));
 
-            pbd11 = new PushButtonData("OnlineLearning", "在线视频", AddInPath, "OnlineLearning");
-            pb11 = rp4.AddItem(pbd11) as PushButton;
-            pb11.ToolTip = "See Selected Element";
-            pb11.LongDescription = "";
-            pb11.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdTileProductManage = new PushButtonData("TileProductManage", " 单品管理", AddInPath, "RevitRedevelop.TileProductManage");
+            pbTileProductManage = rp3.AddItem(pbdTileProductManage) as PushButton;
+            pbTileProductManage.ToolTip = "See Selected Element";
+            pbTileProductManage.LongDescription = "铺砖模板管理";
+            pbTileProductManage.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
 
-            pbd12 = new PushButtonData("OnlineHelp", "在线帮助", AddInPath, "OnlineHelp");
-            pb12 = rp4.AddItem(pbd12) as PushButton;
-            pb12.ToolTip = "See Selected Element";
-            pb12.LongDescription = "";
-            pb12.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+            pbdOnlineLearning = new PushButtonData("OnlineLearning", "在线视频", AddInPath, "OnlineLearning");
+            pbOnlineLearning = rp4.AddItem(pbdOnlineLearning) as PushButton;
+            pbOnlineLearning.ToolTip = "See Selected Element";
+            pbOnlineLearning.LongDescription = "";
+            pbOnlineLearning.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
+
+            pbdOnlineHelp = new PushButtonData("OnlineHelp", "在线帮助", AddInPath, "OnlineHelp");
+            pbOnlineHelp = rp4.AddItem(pbdOnlineHelp) as PushButton;
+            pbOnlineHelp.ToolTip = "See Selected Element";
+            pbOnlineHelp.LongDescription = "";
+            pbOnlineHelp.LargeImage = GetBitmapImage("F:/StrcturalWall.png");
         }
-        //private void InitializeRibbon()
-        //{   
-        //    pb1.Enabled = true;
-        //    pb1.ItemText = "\n您好！\n          请登录!         ";
-        //    pb1.Enabled = false;
-        //    pb2.Enabled = true;
-        //    pb2.ItemText = "登录";
-        //    pb3.Enabled = true;
-        //    pb3.ItemText = "注册";
-        //    pb4.Enabled = false;
-        //    pb5_1.Enabled = false;
-        //    pb5_2.Enabled = false;
-        //    pb5_3.Enabled = false;
-        //    pb5_4.Enabled = false;
-        //    pb5_5.Enabled = false;
-        //    pb5_6.Enabled = false;
-        //    pb5_7.Enabled = false;
-        //    pb5_8.Enabled = false;
-        //    pb5_11.Enabled = false;
-        //    pb5_12.Enabled = false;
-        //    pb6_1.Enabled = false;
-        //    pb6_2.Enabled = false;
-        //    pb6_3.Enabled = false;
-        //    pb7.Enabled = false;
-        //    pb8.Enabled = false;
-        //    pb9.Enabled = false;
-        //    pb10.Enabled = false;
-        //}
+        private void InitializeRibbon()
+        {
+            pbWelcome.Enabled = false;
+            pbWelcome.ItemText = "\n      您好           \n    请登录         ";
+            pbLogin.Enabled = true;
+            pbLogin.ItemText = "登录";
+            pbRegister.Enabled = true;
+            pbRegister.ItemText = "注册";
+            pbLogout.Enabled = false;
+            pbChooseFloorPlan.Enabled = false;
+            pbFloorPlan.Enabled = false;
+            pbChooseSize.Enabled = false;
+            pbWall.Enabled = false;
+            pbGenerateWall.Enabled = false;
+            pbDoor.Enabled = false;
+            pbChooseDoorSize.Enabled = false;
+            pbGenerateDoor.Enabled = false;
+            pbDrawWindow.Enabled = false;
+            pbChooseWindowSize.Enabled = false;
+            pbGenerateWindow.Enabled = false;
+            pbDrawPillar.Enabled = false;
+            pbChoosePillarSize.Enabled = false;
+            pbGeneratePillar.Enabled = false;
+            pbChooseFurniture.Enabled = false;
+            pbFurnitureLocation.Enabled = false;
+            pbImportRevit.Enabled = false;
+            pbImportDwg.Enabled = false;
+            pbAreaPartition.Enabled = false;
+            pbDoorStone.Enabled = false;
+            pbSplitLine.Enabled = false;
+            pbPave.Enabled = false;
+            pbResultExport.Enabled = false;
+            pb3DPreview.Enabled = false;
+            pbFloorPlanManage.Enabled = false;
+            pbPaveModelManage.Enabled = false;
+            pbTileProductManage.Enabled = false;
+            //pudbWall.Enabled = false;
+            //pudbDoor.Enabled = false;
+            //pudbWindow.Enabled = false;
+            //pudbPillar.Enabled = false;
+            //pudbFurniture.Enabled = false;
+            //pudbAreaSplit.Enabled = false;
+        }
         public void RegisterDockableSamplePane(UIControlledApplication application)
         {
             Guid retval;
             DockablePane temp;
-
-            //string Guid0 = ConstGuid.LoginGuid;
-            //UI.Login userLogin = new UI.Login();
-            //userLogin.Show();
-          //  retval = Guid.Empty;
-          //  retval = new Guid(Guid1);
-          //  DockablePaneId userInfo_UserDockablePaneId = new DockablePaneId(retval);
-
-           // application.RegisterDockablePane(userInfo_UserDockablePaneId, "个人信息", userInfo as IDockablePaneProvider);
-
-            //个人信息
-            //string Guid1 = ConstGuid.UserInfoGuid;
-            //UI.UserInfo userInfo = new UI.UserInfo();
-
-            //retval = Guid.Empty;
-            //retval = new Guid(Guid1);
-            //DockablePaneId userInfo_UserDockablePaneId = new DockablePaneId(retval);
-
-            //application.RegisterDockablePane(userInfo_UserDockablePaneId, "个人信息", userInfo as IDockablePaneProvider);
-
-            ////temp = application.GetDockablePane(userInfo_UserDockablePaneId);
-            ////temp.Hide();
-
-            ////套餐购买
-            //string Guid2 = ConstGuid.PackagePurchaseGuid;
-            //UI.PackagePurchase PackagePurchase = new UI.PackagePurchase();
-
-            //retval = Guid.Empty;
-            //retval = new Guid(Guid2);
-            //DockablePaneId PackagePurchase_UserDockablePaneId = new DockablePaneId(retval);
-
-            //application.RegisterDockablePane(PackagePurchase_UserDockablePaneId, "套餐购买", PackagePurchase as IDockablePaneProvider);
-
-            ////temp = application.GetDockablePane(PackagePurchase_UserDockablePaneId);
-            //temp.Hide();
-
-            //绘制户型图
-            string Guid3 = ConstGuid.DrawFloorPlanGuid;
-            UI.DrawFloorPlan DrawFloorPlan = new UI.DrawFloorPlan();
-
-            retval = Guid.Empty;
-            retval = new Guid(Guid3);
-            DockablePaneId DrawFloorPlan_UserDockablePaneId = new DockablePaneId(retval);
-
-            application.RegisterDockablePane(DrawFloorPlan_UserDockablePaneId, "绘制户型图", DrawFloorPlan as IDockablePaneProvider);
-
-            //temp = application.GetDockablePane(DrawFloorPlan_UserDockablePaneId);
-            //temp.Hide();
 
             string Guid3_1 = ConstGuid.ChooseSizeGuid;
             UI.ChooseSize choosesize = new UI.ChooseSize();
@@ -516,14 +501,14 @@ namespace RevitRedevelop
 
             application.RegisterDockablePane(choosedoorsize_UserDockablePaneId, "选择门的尺寸", choosesize as IDockablePaneProvider);
 
-            string Guid4 = ConstGuid.PaveGuid;
-            UI.Pave pave = new UI.Pave();
+            //string Guid4 = ConstGuid.PaveGuid;
+            //UI.Pave pave = new UI.Pave();
 
-            retval = Guid.Empty;
-            retval = new Guid(Guid4);
-            DockablePaneId Pave_UserDockablePaneId = new DockablePaneId(retval);
+            //retval = Guid.Empty;
+            //retval = new Guid(Guid4);
+            //DockablePaneId Pave_UserDockablePaneId = new DockablePaneId(retval);
 
-            application.RegisterDockablePane(Pave_UserDockablePaneId, "铺砖", pave as IDockablePaneProvider);
+            //application.RegisterDockablePane(Pave_UserDockablePaneId, "铺砖", pave as IDockablePaneProvider);
 
             //temp = application.GetDockablePane(Pave_UserDockablePaneId);
             //temp.Hide();

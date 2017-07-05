@@ -102,7 +102,6 @@ C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\Ba
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\DrawFloorPlan.baml
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\LoginANDRegister\Login.baml
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\LoginANDRegister\Register.baml
-C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\Pave\Pave.baml
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\ResultExport\ResultExport.baml
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\BaseInfoManage\TileProductManage.baml
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\UserInfoManage\PackagePurchase.baml
@@ -111,7 +110,6 @@ C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\Ba
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\DrawFloorPlan.g.cs
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\LoginANDRegister\Login.g.cs
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\LoginANDRegister\Register.g.cs
-C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\Pave\Pave.g.cs
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\ResultExport\ResultExport.g.cs
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\BaseInfoManage\TileProductManage.g.cs
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\UserInfoManage\PackagePurchase.g.cs
@@ -128,8 +126,7 @@ C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\Ba
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\PaveModelLib.g.cs
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\ChooseSize.baml
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\ChooseSize.g.cs
-C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.UI.Form1.resources
-C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.csproj.GenerateResource.Cache
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\ChooseDoorSize.baml
 C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\ChooseDoorSize.g.cs
-C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\RevitRedevelop.csprojResolveAssemblyReference.cache
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\FloorPlanCollect.baml
+C:\Users\WG\Documents\Visual Studio 2013\Projects\RevitRedevelop\obj\Debug\UI\DrawFloorPlan\FloorPlanCollect.g.cs

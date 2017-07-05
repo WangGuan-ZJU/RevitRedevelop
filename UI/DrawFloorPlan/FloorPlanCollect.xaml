@@ -1,0 +1,30 @@
+﻿<Window x:Class="RevitRedevelop.UI.FloorPlanCollect"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="602" Width="659.1">
+    <Grid  Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">
+        <ScrollViewer>
+            <Grid>
+
+                <Label Content="户型图收藏" HorizontalAlignment="Left" Margin="16,1,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Grid HorizontalAlignment="Left" Height="1" Margin="10,30,0,0" VerticalAlignment="Top" Width="614" Background="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"/>
+                <Grid HorizontalAlignment="Left" Height="1" Margin="7,149,0,0" VerticalAlignment="Top" Width="617" Background="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"/>
+                <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="376" Margin="16,163,0,0" Stroke="Black" VerticalAlignment="Top" Width="599"/>
+                <Button Content="确定" HorizontalAlignment="Left" Margin="549,545,0,0" VerticalAlignment="Top" Width="75"/>
+                <Label Content="省份" HorizontalAlignment="Left" Margin="26,54,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.025,0.2" FontSize="14"/>
+                <Label Content="县市/区" HorizontalAlignment="Left" Margin="398,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.025,0.2" FontSize="14"/>
+                <Label Content="小区名" HorizontalAlignment="Left" Margin="197,90,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.025,0.2" FontSize="14"/>
+                <Label Content="街道" HorizontalAlignment="Left" Margin="26,90,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.025,0.2" FontSize="14"/>
+                <Label Content="户型选择" HorizontalAlignment="Left" Margin="393,91,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.025,0.2" FontSize="14"/>
+                <ComboBox HorizontalAlignment="Left" Height="20" Margin="89,60,0,0" VerticalAlignment="Top" Width="79"/>
+                <ComboBox HorizontalAlignment="Left" Height="20" Margin="480,60,0,0" VerticalAlignment="Top" Width="79"/>
+                <ComboBox HorizontalAlignment="Left" Height="20" Margin="265,60,0,0" VerticalAlignment="Top" Width="79" RenderTransformOrigin="1.405,1"/>
+                <ComboBox HorizontalAlignment="Left" Height="20" Margin="89,98,0,0" VerticalAlignment="Top" Width="79" RenderTransformOrigin="2.709,2.9"/>
+                <Label Content="市" HorizontalAlignment="Left" Margin="209,57,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.025,0.2" FontSize="14"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="480,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="265,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            </Grid>
+        </ScrollViewer>
+
+    </Grid>
+</Window>

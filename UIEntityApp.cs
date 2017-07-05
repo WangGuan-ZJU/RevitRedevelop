@@ -20,6 +20,8 @@ namespace RevitRedevelop
         public static Autodesk.Revit.UI.UIApplication myApp;
         public static Autodesk.Revit.DB.ElementSet ElementSet;
         public static Autodesk.Revit.UI.ExternalCommandData commandData;
+        public static Autodesk.Revit.UI.UIDocument uidoc;
+        public static Autodesk.Revit.DB.Document document;
         public static string message;
         //public UIApp(Autodesk.Revit.UI.UIApplication app)
         //{
@@ -31,13 +33,14 @@ namespace RevitRedevelop
         //}
         public static void InitUI()
         {
-              RibbonPanel ribbonpanel = null;
+            RibbonPanel ribbonpanel = null;
             List<RibbonPanel> listRobbonPanel = myApp.GetRibbonPanels("砖+宝");
             foreach (RibbonPanel panel in listRobbonPanel)
             {
                 ribbonpanel = panel;
                 IList<RibbonItem> listItem = ribbonpanel.GetItems();
                 PushButton pushbutton = null;
+                PulldownButton pulldownbuuton = null;
                 foreach (RibbonItem item in listItem)
                 {
                     if (item.Name == "UserInfo")//Ribbon的Name属性
@@ -53,7 +56,7 @@ namespace RevitRedevelop
                     if (item.Name == "userInfoShow")
                     {
                         pushbutton = item as PushButton;
-                        pushbutton.ItemText = "\n您好！\n          请登录!         ";
+                        pushbutton.ItemText = "\n      您好           \n  请登录           ";
                     }
                     if (item.Name == "LogOut")
                     {
@@ -75,28 +78,75 @@ namespace RevitRedevelop
                         pushbutton = item as PushButton;
                         pushbutton.Enabled = false;
                     }
+                    if (item.Name == "ChooseSize")
+                    {
+                        pushbutton = item as PushButton;
+                        pushbutton.Enabled = false;
+                    }
+                    if (item.Name == "GenerateWall")
+                    {
+                        pushbutton = item as PushButton;
+                        pushbutton.Enabled = false;
+                    }
                     if (item.Name == "Door")
                     {
                         pushbutton = item as PushButton;
                         pushbutton.Enabled = false;
                     }
-                    if (item.Name == "Window")
+                    if (item.Name == "ChooseDoorSize")
                     {
                         pushbutton = item as PushButton;
                         pushbutton.Enabled = false;
                     }
-                    if (item.Name == "Pillar")
+                    if (item.Name == "GenerateDoor")
                     {
                         pushbutton = item as PushButton;
                         pushbutton.Enabled = false;
                     }
-                    if (item.Name == "Furniture")
+                    if (item.Name == "DrawWindow")
+                    {
+                        pushbutton = item as PushButton;
+                        pushbutton.Enabled = false;
+                    } if (item.Name == "ChooseWindowSize")
+                    {
+                        pushbutton = item as PushButton;
+                        pushbutton.Enabled = false;
+                    }
+                    if (item.Name == "GenerateWindow")
+                    {
+                        pushbutton = item as PushButton;
+                        pushbutton.Enabled = false;
+                    }
+                    if (item.Name == "DrawPillar")
+                    {
+                        pushbutton = item as PushButton;
+                        pushbutton.Enabled = false;
+                    }
+                    if (item.Name == "ChoosePillarSize")
                     {
                         pushbutton = item as PushButton;
                         pushbutton.Enabled = false;
 
                     }
-                    if (item.Name == "3DPreview")
+                    if (item.Name == "GeneratePillar")
+                    {
+                        pushbutton = item as PushButton;
+                        pushbutton.Enabled = false;
+
+                    }
+                    if (item.Name == "FurnitureLocation")
+                    {
+                        pushbutton = item as PushButton;
+                        pushbutton.Enabled = false;
+
+                    }
+                    if (item.Name == "ChooseFurniture")
+                    {
+                        pushbutton = item as PushButton;
+                        pushbutton.Enabled = false;
+
+                    }
+                    if (item.Name == "ImportRevit")
                     {
                         pushbutton = item as PushButton;
                         pushbutton.Enabled = false;
@@ -108,7 +158,7 @@ namespace RevitRedevelop
                         pushbutton.Enabled = false;
 
                     }
-                    if (item.Name == "AreaSplit")
+                    if (item.Name == "AreaPartition")
                     {
                         pushbutton = item as PushButton;
                         pushbutton.Enabled = false;
@@ -119,7 +169,22 @@ namespace RevitRedevelop
                         pushbutton = item as PushButton;
                         pushbutton.Enabled = false;
                     }
-                    if (item.Name == "AdaptPave")
+                    if (item.Name == "DoorStone")
+                    {
+                        pushbutton = item as PushButton;
+                        pushbutton.Enabled = false;
+                    }
+                    if (item.Name == "SplitLine")
+                    {
+                        pushbutton = item as PushButton;
+                        pushbutton.Enabled = false;
+                    }
+                    if (item.Name == "Pave")
+                    {
+                        pushbutton = item as PushButton;
+                        pushbutton.Enabled = false;
+                    }
+                    if (item.Name == "3DPreview")
                     {
                         pushbutton = item as PushButton;
                         pushbutton.Enabled = false;
@@ -146,6 +211,7 @@ namespace RevitRedevelop
                     }
                 }
             }
+            
         }
         public static void InitUIAfterLogin()
         {
@@ -156,6 +222,7 @@ namespace RevitRedevelop
                 ribbonpanel = panel;
                 IList<RibbonItem> listItem = ribbonpanel.GetItems();
                 PushButton pushbutton = null;
+                PulldownButton pulldownbuuton = null;
                 foreach (RibbonItem item in listItem)
                 {
                     if (item.Name == "UserInfo")//Ribbon的Name属性
@@ -188,33 +255,146 @@ namespace RevitRedevelop
                         pushbutton = item as PushButton;
                         pushbutton.Enabled = true;
                     }
-                    if (item.Name == "Wall")
+                    if (item.Name == "WallPull")
                     {
-                        pushbutton = item as PushButton;
-                        pushbutton.Enabled = true;
+                        pulldownbuuton = item as PulldownButton;
+                        IList<PushButton> list = pulldownbuuton.GetItems();
+                        foreach (PushButton pb in list)
+                        {
+                            pb.Enabled = true;
+                            //if (pb.Name == "Wall")
+                            //{
+                            //    pushbutton = pb as PushButton;
+                            //    pushbutton.Enabled = true;
+                            //}
+                            //if (pb.Name == "ChooseSize")
+                            //{
+                            //    pushbutton = pb as PushButton;
+                            //    pushbutton.Enabled = true;
+                            //}
+                            //if (pb.Name == "GenerateWall")
+                            //{
+                            //    pushbutton = pb as PushButton;
+                            //    pushbutton.Enabled = true;
+                            //}
+                        }
                     }
-                    if (item.Name == "Door")
+                   
+                    if (item.Name == "DoorPull")
                     {
-                        pushbutton = item as PushButton;
-                        pushbutton.Enabled = true;
+                        pulldownbuuton = item as PulldownButton;
+                        pulldownbuuton = item as PulldownButton;
+                        IList<PushButton> list = pulldownbuuton.GetItems();
+                        foreach (PushButton pb in list)
+                        {
+                            pb.Enabled = true;
+                            //if (item.Name == "Door")
+                            //{
+                            //    pushbutton = item as PushButton;
+                            //    pushbutton.Enabled = true;
+                            //}
+                            //if (item.Name == "ChooseDoorSize")
+                            //{
+                            //    pushbutton = item as PushButton;
+                            //    pushbutton.Enabled = true;
+                            //}
+                            //if (item.Name == "GenerateDoor")
+                            //{
+                            //    pushbutton = item as PushButton;
+                            //    pushbutton.Enabled = true;
+                            //}
+                        }
                     }
-                    if (item.Name == "Window")
+                    //if (item.Name == "Door")
+                    //{
+                    //    pushbutton = item as PushButton;
+                    //    pushbutton.Enabled = true;
+                    //}
+                    //if (item.Name == "ChooseDoorSize")
+                    //{
+                    //    pushbutton = item as PushButton;
+                    //    pushbutton.Enabled = true;
+                    //}
+                    //if (item.Name == "GenerateDoor")
+                    //{
+                    //    pushbutton = item as PushButton;
+                    //    pushbutton.Enabled = true;
+                    //}
+
+                    if (item.Name == "WindowPull")
                     {
-                        pushbutton = item as PushButton;
-                        pushbutton.Enabled = true;
+                        pulldownbuuton = item as PulldownButton;
+                        pulldownbuuton = item as PulldownButton;
+                        IList<PushButton> list = pulldownbuuton.GetItems();
+                        foreach (PushButton pb in list)
+                        {
+                            pb.Enabled = true;
+                        }
                     }
-                    if (item.Name == "Pillar")
+                    //if (item.Name == "DrawWindow")
+                    //{
+                    //    pushbutton = item as PushButton;
+                    //    pushbutton.Enabled = true;
+                    //} if (item.Name == "ChooseWindowSize")
+                    //{
+                    //    pushbutton = item as PushButton;
+                    //    pushbutton.Enabled = true;
+                    //}
+                    //if (item.Name == "GenerateWindow")
+                    //{
+                    //    pushbutton = item as PushButton;
+                    //    pushbutton.Enabled = true;
+                    //}
+                    if (item.Name == "PillarPull")
                     {
-                        pushbutton = item as PushButton;
-                        pushbutton.Enabled = true;
+                        pulldownbuuton = item as PulldownButton;
+                        pulldownbuuton = item as PulldownButton;
+                        IList<PushButton> list = pulldownbuuton.GetItems();
+                        foreach (PushButton pb in list)
+                        {
+                            pb.Enabled = true;
+                        }
                     }
+                    //if (item.Name == "DrawPillar")
+                    //{
+                    //    pushbutton = item as PushButton;
+                    //    pushbutton.Enabled = true;
+                    //}
+                    //if (item.Name == "ChoosePillarSize")
+                    //{
+                    //    pushbutton = item as PushButton;
+                    //    pushbutton.Enabled = true;
+
+                    //}
+                    //if (item.Name == "GeneratePillar")
+                    //{
+                    //    pushbutton = item as PushButton;
+                    //    pushbutton.Enabled = true;
+
+                    //}
                     if (item.Name == "Furniture")
                     {
-                        pushbutton = item as PushButton;
-                        pushbutton.Enabled = true;
-
+                        pulldownbuuton = item as PulldownButton;
+                        pulldownbuuton = item as PulldownButton;
+                        IList<PushButton> list = pulldownbuuton.GetItems();
+                        foreach (PushButton pb in list)
+                        {
+                            pb.Enabled = true;
+                        }
                     }
-                    if (item.Name == "3DPreview")
+                    //if (item.Name == "FurnitureLocation")
+                    //{
+                    //    pushbutton = item as PushButton;
+                    //    pushbutton.Enabled = true;
+
+                    //}
+                    //if (item.Name == "ChooseFurniture")
+                    //{
+                    //    pushbutton = item as PushButton;
+                    //    pushbutton.Enabled = true;
+
+                    //}
+                    if (item.Name == "ImportRevit")
                     {
                         pushbutton = item as PushButton;
                         pushbutton.Enabled = true;
@@ -228,16 +408,36 @@ namespace RevitRedevelop
                     }
                     if (item.Name == "AreaSplit")
                     {
-                        pushbutton = item as PushButton;
-                        pushbutton.Enabled = true;
-
+                        pulldownbuuton = item as PulldownButton;
+                        pulldownbuuton = item as PulldownButton;
+                        IList<PushButton> list = pulldownbuuton.GetItems();
+                        foreach (PushButton pb in list)
+                        {
+                            pb.Enabled = true;
+                        }
                     }
-                    if (item.Name == "ChoosePaveModel")
+                    //if (item.Name == "AreaPartition")
+                    //{
+                    //    pushbutton = item as PushButton;
+                    //    pushbutton.Enabled = true;
+
+                    //}
+                    //if (item.Name == "DoorStone")
+                    //{
+                    //    pushbutton = item as PushButton;
+                    //    pushbutton.Enabled = true;
+                    //}
+                    //if (item.Name == "SplitLine")
+                    //{
+                    //    pushbutton = item as PushButton;
+                    //    pushbutton.Enabled = true;
+                    //}
+                    if (item.Name == "Pave")
                     {
                         pushbutton = item as PushButton;
                         pushbutton.Enabled = true;
                     }
-                    if (item.Name == "AdaptPave")
+                    if (item.Name == "3DPreview")
                     {
                         pushbutton = item as PushButton;
                         pushbutton.Enabled = true;

@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="655" Foreground="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Width="1029">
+             d:DesignHeight="655" Foreground="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Width="1053">
     <Grid>
         <ScrollViewer>
             <Grid Height="655">
@@ -39,13 +39,13 @@
                 <TextBox HorizontalAlignment="Left" Height="25" Margin="65,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="442"/>
                 <Label Content="搜索" HorizontalAlignment="Left" Height="30" Margin="16,123,0,0" VerticalAlignment="Top" Width="44" FontSize="14"/>
                 <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="452" Margin="10,165,0,0" Stroke="Black" VerticalAlignment="Top" Width="992"/>
-                <Image HorizontalAlignment="Left" Height="326" Margin="41,203,0,0" VerticalAlignment="Top" Width="310" Source="../Icon/StrcturalWall.png"/>
-                <Image HorizontalAlignment="Left" Height="340" Margin="347,203,0,0" VerticalAlignment="Top" Width="309" Source="../Icon/StrcturalWall.png"/>
-                <Image HorizontalAlignment="Left" Height="340" Margin="673,210,0,0" VerticalAlignment="Top" Width="308" Source="../Icon/StrcturalWall.png"/>
                 <Label Content="模板介绍" HorizontalAlignment="Left" Margin="151,559,0,0" VerticalAlignment="Top"/>
                 <Label Content="模板介绍" HorizontalAlignment="Left" Margin="491,559,0,0" VerticalAlignment="Top"/>
                 <Label Content="模板介绍" HorizontalAlignment="Left" Margin="837,559,0,0" VerticalAlignment="Top"/>
                 <Button Content="确定" HorizontalAlignment="Left" Margin="916,625,0,0" VerticalAlignment="Top" Width="75"/>
+                <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="335" Margin="65,202,0,0" Stroke="Black" VerticalAlignment="Top" Width="246"/>
+                <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="335" Margin="376,202,0,0" Stroke="Black" VerticalAlignment="Top" Width="290"/>
+                <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="335" Margin="715,202,0,0" Stroke="Black" VerticalAlignment="Top" Width="265"/>
             </Grid>
         </ScrollViewer>
     </Grid>

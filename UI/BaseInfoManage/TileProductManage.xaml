@@ -6,7 +6,7 @@
              mc:Ignorable="d" Foreground="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}" OpacityMask="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Height="696" Width="412">
     <Grid Height="667" Margin="0,0,-105,-367" HorizontalAlignment="Left" Width="405" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">
         <ScrollViewer>
-            <Grid>
+            <Grid Width="405">
                 <Label Content="单品信息管理" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
                 <Grid HorizontalAlignment="Left" Height="1" Margin="10,38,0,0" VerticalAlignment="Top" Width="385" Background="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"/>
                 <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="536" Margin="10,85,0,0" Stroke="Black" VerticalAlignment="Top" Width="368"/>

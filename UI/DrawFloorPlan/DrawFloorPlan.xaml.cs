@@ -23,23 +23,14 @@ namespace RevitRedevelop.UI
     ///     
     [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
     [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
-    public partial class DrawFloorPlan : Page, Autodesk.Revit.UI.IDockablePaneProvider
+    public partial class DrawFloorPlan :Window
     {
          private Autodesk.Revit.UI.UIApplication app;
          public DrawFloorPlan()
         {
             InitializeComponent();
         }
-        public void SetupDockablePane(DockablePaneProviderData data)
-        {
-            
-            data.FrameworkElement = this as FrameworkElement;
-            DockablePaneProviderData d = new DockablePaneProviderData();
-
-            data.InitialState = new Autodesk.Revit.UI.DockablePaneState();
-            //data.InitialState.SetFloatingRectangle(new Autodesk.Revit.UI.Rectangle(0,100,200,200));
-            data.InitialState.DockPosition = Autodesk.Revit.UI.DockPosition.Tabbed;
-        }
+      
 
         private void CreateWall(object sender, RoutedEventArgs e)
         {
@@ -82,6 +73,17 @@ namespace RevitRedevelop.UI
           
           //  app.PostCommand(RevitCommandId.LookupPostableCommandId(PostableCommand.ArchitecturalWall));
             
+        }
+
+        private void MyFloorPlan(object sender, RoutedEventArgs e)
+        {
+            FloorPlanManage floorplanmanage = new FloorPlanManage();
+            floorplanmanage.Show();
+        }
+
+        private void ImportRevit(object sender, RoutedEventArgs e)
+        {
+            UIEntityApp.myApp.OpenAndActivateDocument("D:/项目1.rvt");
         }
     }
 }
